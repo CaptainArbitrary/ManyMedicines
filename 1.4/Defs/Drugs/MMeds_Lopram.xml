@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>MMeds_LorpramProduction</defName>
+    <label>lorpram production</label>
+    <description>Produce lorpram, an antidepressant.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>MMeds_Lorpram</defName>
+    <label>lorpram</label>
+    <description>A synthetic antidepressant that elevates mood. Take daily for best results. Common side effects include drowsiness and weight gain.</description>
+    <descriptionHyperlinks>
+      <HediffDef>MMeds_LorpramHigh</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/MMeds_Lorpram</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>6.5</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MMeds_LorpramHigh</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>MMeds_LorpramProduction</researchPrerequisite>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <productCount>2</productCount>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>MMeds_LorpramChemical</chemical>
+        <addictiveness>0.5</addictiveness>
+        <existingAddictionSeverityOffset>1.0</existingAddictionSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>MMeds_LorpramHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>lorpram</label>
+    <description>Lorpram in the bloodstream. Use elevates the mood.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.98</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <hungerRateFactor>1.20</hungerRateFactor>
+        <restFallFactor>1.20</restFallFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>MMeds_LorpramHighThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>MMeds_LorpramHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>on lorpram</label>
+        <description>We don't make mistakes. We just have happy accidents.</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ChemicalDef>
+    <defName>MMeds_LorpramChemical</defName>
+    <label>lorpram</label>
+    <addictionHediff>MMeds_LorpramAddiction</addictionHediff>
+    <canBinge>false</canBinge>
+    <generateAddictionGenes>false</generateAddictionGenes>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>MMeds_LorpramNeed</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>lorpram</label>
+    <description>This person needs to take lorpram daily to avoid withdrawal symptoms.</description>
+    <fallPerDay>0.98</fallPerDay>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+  </NeedDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>MMeds_LorpramAddiction</defName>
+    <label>lorpram dependence </label>
+    <description>A chemical dependence on the antidepressant lorpram. Discontinuation of the drug can result in irritability, sleeplessness, nausea and severely depressed mood. Withdrawal symptoms usually resolve by themselves about three days after the last dose wears off.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <causesNeed>MMeds_LorpramNeed</causesNeed>
+    <initialSeverity>1.0</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.25</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <vomitMtbDays>0.075</vomitMtbDays>
+        <painOffset>0.30</painOffset>
+        <socialFightChanceFactor>5.0</socialFightChanceFactor>
+        <restFallFactor>0.40</restFallFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>MMeds_LorpramWithdrawalThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>MMeds_LorpramAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>lorpram withdrawal</label>
+        <description>The light has gone out. I will never feel cheerful again.</description>
+        <baseMoodEffect>-35</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>
