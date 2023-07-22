@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>CaptArbitrary.ManyMedicines</packageId>
+  <name>Many Medicines</name>
+  <author>CaptainArbitrary</author>
+  <description></description>
+  <url>https://github.com/CaptainArbitrary/Rimworld-Many-Medicines</url>
+  <supportedVersions>
+    <li>1.4</li>
+  </supportedVersions>
+</ModMetaData>

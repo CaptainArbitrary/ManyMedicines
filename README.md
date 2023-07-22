@@ -1,1 +1,1 @@
-# Rimworld-Many-Medicines
+# Many Medicines
