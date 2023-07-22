@@ -15,7 +15,7 @@
   <ThingDef ParentName="MakeableDrugPillBase">
     <defName>MMeds_Lorpam</defName>
     <label>lorpam</label>
-    <description>A synthetic antidepressant that elevates mood. Take daily for best results. Common side effects include drowsiness and weight gain.</description>
+    <description>A synthetic antidepressant. Common side effects include drowsiness, weight gain and drug dependence. Discontinuation leads to withdrawal symptoms including aches and pains, irritability, nausea, sleeplessness and severe rebound depression.</description>
     <descriptionHyperlinks>
       <HediffDef>MMeds_LorpamHigh</HediffDef>
     </descriptionHyperlinks>
@@ -37,6 +37,12 @@
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>MMeds_LorpamHigh</hediffDef>
           <severity>1.0</severity>
+          <toleranceChemical>MMeds_LorpamChemical</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MMeds_LorpamTolerance</hediffDef>
+          <severity>0.5</severity>
+          <divideByBodySize>true</divideByBodySize>
         </li>
       </outcomeDoers>
     </ingestible>
@@ -55,6 +61,7 @@
       <li Class="CompProperties_Drug">
         <chemical>MMeds_LorpamChemical</chemical>
         <addictiveness>0.5</addictiveness>
+        <minToleranceToAddict>0.8</minToleranceToAddict>
         <existingAddictionSeverityOffset>1.0</existingAddictionSeverityOffset>
       </li>
     </comps>
@@ -64,7 +71,7 @@
     <defName>MMeds_LorpamHigh</defName>
     <hediffClass>Hediff_High</hediffClass>
     <label>lorpam</label>
-    <description>Lorpam in the bloodstream. Use elevates the mood.</description>
+    <description>Lorpam in the bloodstream, elevating this person's mood. Side effects include drowsiness and weight gain.</description>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
@@ -100,10 +107,32 @@
   <ChemicalDef>
     <defName>MMeds_LorpamChemical</defName>
     <label>lorpam</label>
+    <toleranceHediff>MMeds_LorpamTolerance</toleranceHediff>
     <addictionHediff>MMeds_LorpamAddiction</addictionHediff>
     <canBinge>false</canBinge>
     <generateAddictionGenes>false</generateAddictionGenes>
   </ChemicalDef>
+
+  <HediffDef>
+    <defName>MMeds_LorpamTolerance</defName>
+    <label>lorpam tolerance</label>
+    <description>A built-up tolerance to lorpam. The more severe this tolerance is, the more lorpam it takes to get the same effect.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.125</severityPerDay>
+      </li>
+    </comps>
+  </HediffDef>
 
   <NeedDef ParentName="DrugAddictionNeedBase">
     <defName>MMeds_LorpamNeed</defName>
