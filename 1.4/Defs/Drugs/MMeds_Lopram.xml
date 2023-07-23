@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>MMeds_LopramProduction</defName>
+    <label>lopram production</label>
+    <tab>MMeds_ResearchTab</tab>
+    <description>Produce lopram, an antidepressant.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
+  </ResearchProjectDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>MMeds_Lopram</defName>
+    <label>lopram</label>
+    <description>A synthetic antidepressant. Common side effects include drowsiness, weight gain and drug dependence. Discontinuation leads to withdrawal symptoms including aches and pains, irritability, nausea, sleeplessness and severe rebound depression.</description>
+    <descriptionHyperlinks>
+      <HediffDef>MMeds_LopramHigh</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/MMeds_Lopram</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>2.50</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MMeds_LopramHigh</hediffDef>
+          <severity>1.0</severity>
+          <toleranceChemical>MMeds_LopramChemical</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MMeds_LopramTolerance</hediffDef>
+          <severity>0.5</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>MMeds_LopramProduction</researchPrerequisite>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <productCount>2</productCount>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>MMeds_LopramChemical</chemical>
+        <addictiveness>0.5</addictiveness>
+        <minToleranceToAddict>0.8</minToleranceToAddict>
+        <existingAddictionSeverityOffset>1.0</existingAddictionSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>MMeds_LopramHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>lopram</label>
+    <description>Lopram in the bloodstream, elevating this person's mood. Side effects include drowsiness and weight gain.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.98</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <hungerRateFactor>1.20</hungerRateFactor>
+        <restFallFactor>1.20</restFallFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>MMeds_LopramHighThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>MMeds_LopramHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>on lopram</label>
+        <description>We don't make mistakes. We just have happy accidents.</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ChemicalDef>
+    <defName>MMeds_LopramChemical</defName>
+    <label>lopram</label>
+    <toleranceHediff>MMeds_LopramTolerance</toleranceHediff>
+    <addictionHediff>MMeds_LopramAddiction</addictionHediff>
+    <canBinge>false</canBinge>
+    <generateAddictionGenes>false</generateAddictionGenes>
+  </ChemicalDef>
+
+  <HediffDef>
+    <defName>MMeds_LopramTolerance</defName>
+    <label>lopram tolerance</label>
+    <description>A built-up tolerance to lopram. The more severe this tolerance is, the more lopram it takes to get the same effect.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.125</severityPerDay>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>MMeds_LopramNeed</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>lopram</label>
+    <description>This person needs to take lopram daily to avoid withdrawal symptoms.</description>
+    <fallPerDay>0.98</fallPerDay>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+  </NeedDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>MMeds_LopramAddiction</defName>
+    <label>lopram dependence </label>
+    <description>A chemical dependence on the antidepressant lopram. Discontinuation of the drug can result in irritability, sleeplessness, nausea and severely depressed mood. Withdrawal symptoms usually resolve by themselves about three days after the last dose wears off.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <causesNeed>MMeds_LopramNeed</causesNeed>
+    <initialSeverity>1.0</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.25</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <vomitMtbDays>0.075</vomitMtbDays>
+        <painOffset>0.30</painOffset>
+        <socialFightChanceFactor>5.0</socialFightChanceFactor>
+        <restFallFactor>0.40</restFallFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>MMeds_LopramWithdrawalThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>MMeds_LopramAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>lopram withdrawal</label>
+        <description>The light has gone out. I will never feel cheerful again.</description>
+        <baseMoodEffect>-35</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>
