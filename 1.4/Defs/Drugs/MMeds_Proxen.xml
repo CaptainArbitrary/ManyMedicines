@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>MMeds_ProxenProduction</defName>
+    <label>proxen production</label>
+    <tab>MMeds_ResearchTab</tab>
+    <description>Produce proxen, a mild analgesic.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>MMeds_Proxen</defName>
+    <label>proxen</label>
+    <description>A mild analgesic. Non-additive and non-tolerance-forming, but only really useful for providing partial relief from pain. Take every 8 to 12 hours for best results.</description>
+    <descriptionHyperlinks><HediffDef>MMeds_ProxenHigh</HediffDef></descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/MMeds_Proxen</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>700</WorkToMake>
+      <MarketValue>1.20</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MMeds_ProxenHigh</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>MMeds_ProxenProduction</researchPrerequisite>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <productCount>4</productCount>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Drug">
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>MMeds_ProxenHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>proxen</label>
+    <description>Proxen provides partial relief from pain. The analgesic effect lasts peaks after about 1 hour, plateaus for about 8 hours, then gradually wears off over the next 3 hours.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <minSeverity>0.05</minSeverity>
+        <painFactor>0.90</painFactor>
+      </li>
+      <li>
+        <minSeverity>0.10</minSeverity>
+        <painFactor>0.80</painFactor>
+      </li>
+      <li>
+        <minSeverity>0.15</minSeverity>
+        <painFactor>0.7</painFactor>
+      </li>
+      <li>
+        <minSeverity>0.20</minSeverity>
+        <painFactor>0.6</painFactor>
+      </li>
+      <li>
+        <minSeverity>0.25</minSeverity>
+        <painFactor>0.5</painFactor>
+      </li>
+      <li>
+        <minSeverity>0.95</minSeverity>
+        <painFactor>0.95</painFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>
