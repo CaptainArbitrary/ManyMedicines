@@ -29,7 +29,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>600</WorkToMake>
-      <MarketValue>6.5</MarketValue>
+      <MarketValue>2.50</MarketValue>
       <Mass>0.005</Mass>
       <Flammability>0.7</Flammability>
     </statBases>
