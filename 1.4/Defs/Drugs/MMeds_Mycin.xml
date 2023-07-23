@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>MMeds_MycinProduction</defName>
+    <label>mycin production</label>
+    <tab>MMeds_ResearchTab</tab>
+    <description>Produce mycin, an immunostimulant.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+    <researchViewX>0.0</researchViewX>
+    <researchViewY>2.0</researchViewY>
+  </ResearchProjectDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>MMeds_Mycin</defName>
+    <label>mycin</label>
+    <description>Mycin works by boosting the body's natural immune response to bacterial, viral, parasitic and fungal infections, making it an extremely effective broad-spectrum antimicrobial. Take daily for best results.</description>
+    <descriptionHyperlinks>
+      <HediffDef>MMeds_MycinHigh</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/MMeds_Mycin</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>800</WorkToMake>
+      <MarketValue>1.85</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MMeds_MycinHigh</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>MMeds_MycinProduction</researchPrerequisite>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <productCount>3</productCount>
+    </recipeMaker>
+    <costList>
+      <MedicineHerbal>2</MedicineHerbal>
+      <Neutroamine>1</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>20</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>MMeds_MycinHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>mycin</label>
+    <description>Mycin is boosting this person's natural immune response. Effects last for about a day.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.98</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ImmunityGainSpeed>0.24</ImmunityGainSpeed>
+        </statOffsets>
+        <makeImmuneTo>
+          <li>WoundInfection</li>
+        </makeImmuneTo>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>
