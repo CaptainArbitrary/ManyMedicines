@@ -4,12 +4,15 @@
   <ResearchProjectDef>
     <defName>MMeds_LopramProduction</defName>
     <label>lopram production</label>
+    <tab>MMeds_ResearchTab</tab>
     <description>Produce lopram, an antidepressant.</description>
     <baseCost>300</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
       <li>DrugProduction</li>
     </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
   </ResearchProjectDef>
 
   <ThingDef ParentName="MakeableDrugPillBase">
