@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>MMeds_DaylilyRootTea</defName>
+    <label>daylily root tea</label>
+    <description>This tea made from daylily roots has antiemetic properties and can be used as a palliative treatment for food poisoning and gut worms.</description>
+    <descriptionHyperlinks>
+      <HediffDef>MMeds_DaylilyRootTeaHigh</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/MMeds_DaylilyRootTea</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>6.5</MarketValue>
+      <Mass>0.05</Mass>
+      <DeteriorationRate>6</DeteriorationRate>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <foodType>Fluid, Processed</foodType>
+      <baseIngestTicks>210</baseIngestTicks>
+      <nurseable>true</nurseable>
+      <ingestSound>Ingest_Drink</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MMeds_DaylilyRootTeaHigh</hediffDef>
+          <severity>0.75</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <workSkill>Cooking</workSkill>
+      <recipeUsers>
+        <li>Campfire</li>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+      </recipeUsers>
+      <productCount>1</productCount>
+    </recipeMaker>
+    <costList>
+      <MMeds_RawDaylilyRoots>3</MMeds_RawDaylilyRoots>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug" />
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>MMeds_DaylilyRootTeaHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>daylily root tea</label>
+    <description>This tea made from daylily roots has antiemetic properties.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.98</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <vomitMtbDays>-1.0</vomitMtbDays>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>
