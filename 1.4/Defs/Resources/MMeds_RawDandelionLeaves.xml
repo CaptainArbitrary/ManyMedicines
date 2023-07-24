@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="PlantFoodRawBase">
+      <defName>MMeds_RawDandelionLeaves</defName>
+      <label>dandelion leaves</label>
+      <description>Leaves from the dandelion plant.</description>
+      <possessionCount>10</possessionCount>
+      <graphicData>
+        <texPath>Things/Item/Resource/PlantFoodRaw/MMeds_RawDandelionLeaves</texPath>
+      </graphicData>
+      <statBases>
+        <MarketValue>0.15</MarketValue>
+        <Flammability>1.3</Flammability>
+      </statBases>
+      <comps>
+        <li Class="CompProperties_Rottable">
+          <daysToRotStart>30</daysToRotStart>
+          <rotDestroys>true</rotDestroys>
+        </li>
+      </comps>
+      <ingestible>
+        <foodType>VegetableOrFruit</foodType>
+      </ingestible>
+  </ThingDef>
+
+</Defs>
