@@ -22,6 +22,12 @@ This tea made from rose petals and medicinal herbs relieves stress, promotes goo
 
 Tea made from daylily roots has antiemetic properties and can provide some relief from food poisoning, gut worms and other gastrointestinal maladies.
 
+#### Dandelion Leaf Tea
+
+<img alt="Dandelion Leaf Tea" src="Common/Textures/Things/Item/Drug/MMeds_DandelionLeafTea.png" align="left" width="64">
+
+This tea made from medicinal herbs and dandelion leaves helps to prevent the buildup of toxins in the liver and kidneys, as well as stimulating the appetite and settling the stomach.
+
 ### Industrial Medicines
 
 #### Proxen
