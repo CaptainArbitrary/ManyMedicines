@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName = "Plant_Dandelion"]/plant</xpath>
+    <value>
+      <harvestYield>4</harvestYield>
+      <harvestWork>100</harvestWork>
+      <harvestedThingDef>MMeds_RawDandelionLeaves</harvestedThingDef>
+    </value>
+  </Operation>
+
+</Patch>

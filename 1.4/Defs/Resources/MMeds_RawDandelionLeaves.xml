@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="RoughPlantBase">
+      <defName>MMeds_RawDandelionLeaves</defName>
+      <label>dandelion leaves</label>
+      <description>Leaves from the dandelion plant.</description>
+      <!-- <descriptionHyperlinks>
+        <ThingDef>ManyMedicines_DandelionLeafTea</ThingDef>
+      </descriptionHyperlinks> -->
+      <possessionCount>10</possessionCount> <!-- FIXME: -->
+      <graphicData>
+        <texPath>Things/Item/Resource/PlantFoodRaw/MMeds_RawDandelionLeaves</texPath>
+      </graphicData>
+      <statBases>
+        <MarketValue>0.5</MarketValue> <!-- FIXME: -->
+        <Flammability>1.3</Flammability>
+      </statBases>
+      <comps>
+        <li Class="CompProperties_Rottable">
+          <daysToRotStart>30</daysToRotStart> <!-- FIXME: -->
+          <rotDestroys>true</rotDestroys>
+        </li>
+      </comps>
+      <thingCategories>
+        <li>PlantMatter</li>
+      </thingCategories>
+      <ingestible>
+        <preferability>DesperateOnly</preferability>
+        <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      </ingestible>
+  </ThingDef>
+
+</Defs>
