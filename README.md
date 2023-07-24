@@ -10,6 +10,12 @@
 
 This simple broth of meat, vegetables and medicinal herbs makes one feel better when one is sick. It starts spoiling almost immediately, though, so best consume it while it's very fresh. For reasons lost to history, this broth is universally called "chicken soup" even though it can be made from almost any ingredients.
 
+#### Rose Petal Tea
+
+<img alt="Rose Petal Tea" src="Common/Textures/Things/Item/Drug/MMeds_RosePetalTea.png" align="left" width="64">
+
+This tea made from rose petals and medicinal herbs relieves stress, promotes good circulation and speeds healing. Its effects are quite mild, but it's free from harmful side effects so it can be consumed frequently without risk of damage or dependence.
+
 ### Industrial Medicines
 
 #### Proxen
