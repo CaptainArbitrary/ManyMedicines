@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>MMeds_RosePetalTea</defName>
+    <label>rose petal tea</label>
+    <description>This tea made from rose petals and medicinal herbs promotes good health and speeds healing.</description>
+    <descriptionHyperlinks>
+      <HediffDef>MMeds_RosePetalTeaHigh</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/MMeds_RosePetalTea</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>6.5</MarketValue>
+      <Mass>0.05</Mass>
+      <DeteriorationRate>6</DeteriorationRate>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <foodType>Fluid, Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.40</joy>
+      <baseIngestTicks>210</baseIngestTicks>
+      <nurseable>true</nurseable>
+      <ingestSound>Ingest_Drink</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MMeds_RosePetalTeaHigh</hediffDef>
+          <severity>0.75</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <workSkill>Cooking</workSkill>
+      <recipeUsers>
+        <li>Campfire</li>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+      </recipeUsers>
+      <productCount>1</productCount>
+    </recipeMaker>
+    <costList>
+      <MMeds_RawRosePetals>10</MMeds_RawRosePetals>
+      <MedicineHerbal>1</MedicineHerbal>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug" />
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>MMeds_RosePetalTeaHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>rose petal tea</label>
+    <description>This tea made from rose petals and medicinal herbs promotes good health and speeds healing.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.98</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>0.25</minSeverity>
+        <statOffsets>
+          <MentalBreakThreshold>-0.10</MentalBreakThreshold>
+        </statOffsets>
+        <statFactors>
+          <InjuryHealingFactor>1.04</InjuryHealingFactor>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>0.03</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.75</minSeverity>
+        <statOffsets>
+          <MentalBreakThreshold>-0.20</MentalBreakThreshold>
+        </statOffsets>
+        <statFactors>
+          <InjuryHealingFactor>1.08</InjuryHealingFactor>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>0.06</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>
