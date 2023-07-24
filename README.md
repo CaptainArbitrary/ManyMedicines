@@ -16,6 +16,12 @@ This simple broth of meat, vegetables and medicinal herbs makes one feel better 
 
 This tea made from rose petals and medicinal herbs relieves stress, promotes good circulation and speeds healing. Its effects are quite mild, but it's free from harmful side effects so it can be consumed frequently without risk of damage or dependence.
 
+#### Daylily Root Tea
+
+<img alt="Daylily Root Tea" src="Common/Textures/Things/Item/Drug/MMeds_DaylilyRootTea.png" align="left" width="64">
+
+Tea made from daylily roots has antiemetic properties and can provide some relief from food poisoning, gut worms and other gastrointestinal maladies.
+
 ### Industrial Medicines
 
 #### Proxen
