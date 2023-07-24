@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>MMeds_DandelionLeafTea</defName>
+    <label>dandelion leaf tea</label>
+    <description>This tea made from medicinal herbs and dandelion leaves settles the stomach, stimulates the appetite and helps prevent the buildup of toxins in the liver and kidneys.</description>
+    <descriptionHyperlinks>
+      <HediffDef>MMeds_DandelionLeafTeaHigh</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/MMeds_DandelionLeafTea</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>600</WorkToMake>
+      <MarketValue>6.5</MarketValue>
+      <Mass>0.05</Mass>
+      <DeteriorationRate>6</DeteriorationRate>
+    </statBases>
+    <techLevel>Neolithic</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <foodType>Fluid, Processed</foodType>
+      <baseIngestTicks>210</baseIngestTicks>
+      <nurseable>true</nurseable>
+      <ingestSound>Ingest_Drink</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MMeds_DandelionLeafTeaHigh</hediffDef>
+          <severity>0.75</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <workSkill>Cooking</workSkill>
+      <soundWorking>Recipe_Brewing</soundWorking>
+      <recipeUsers>
+        <li>Campfire</li>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+      </recipeUsers>
+      <productCount>1</productCount>
+    </recipeMaker>
+    <costList>
+      <MedicineHerbal>1</MedicineHerbal>
+      <MMeds_RawDandelionLeaves>4</MMeds_RawDandelionLeaves>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug" />
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>MMeds_DandelionLeafTeaHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>dandelion leaf tea</label>
+    <description>This tea made from medicinal herbs and dandelion leaves settles the stomach, stimulates the appetite and helps prevent the buildup of toxins in the liver and kidneys.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.48</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <ToxicResistance>0.5</ToxicResistance>
+        </statOffsets>
+        <hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+        <vomitMtbDays>-1.0</vomitMtbDays>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>
