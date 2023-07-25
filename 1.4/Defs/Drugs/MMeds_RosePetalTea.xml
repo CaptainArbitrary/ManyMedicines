@@ -62,7 +62,6 @@
     <label>rose petal tea</label>
     <description>This tea made from rose petals and medicinal herbs promotes good health and speeds healing.</description>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
     <comps>

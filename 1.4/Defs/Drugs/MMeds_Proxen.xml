@@ -64,7 +64,6 @@
     <label>proxen</label>
     <description>Proxen provides partial relief from pain. The analgesic effect lasts peaks after about 1 hour, plateaus for about 8 hours, then gradually wears off over the next 3 hours.</description>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
     <comps>
