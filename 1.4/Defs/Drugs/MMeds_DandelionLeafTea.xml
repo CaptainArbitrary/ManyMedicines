@@ -32,7 +32,7 @@
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>MMeds_DandelionLeafTeaHigh</hediffDef>
-          <severity>0.75</severity>
+          <severity>1.0</severity>
         </li>
       </outcomeDoers>
     </ingestible>
@@ -59,17 +59,17 @@
     <defName>MMeds_DandelionLeafTeaHigh</defName>
     <hediffClass>Hediff_High</hediffClass>
     <label>dandelion leaf tea</label>
-    <description>This tea made from medicinal herbs and dandelion leaves settles the stomach, stimulates the appetite and helps prevent the buildup of toxins in the liver and kidneys.</description>
+    <description>This tea made from medicinal herbs and dandelion leaves settles the stomach, stimulates the appetite and helps detoxify the liver and kidneys.</description>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.48</severityPerDay>
+        <severityPerDay>-3.98</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
-      <li Class="MMeds.HediffCompProperties_CureToxicBuildup">
-        <severityPerDay>-0.48</severityPerDay>
+      <li Class="MMeds.HediffCompProperties_TreatToxicBuildup">
+        <severityPerDay>-0.24</severityPerDay>
       </li>
     </comps>
     <stages>
