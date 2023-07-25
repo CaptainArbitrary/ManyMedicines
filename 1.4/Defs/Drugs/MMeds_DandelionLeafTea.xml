@@ -4,7 +4,7 @@
   <ThingDef ParentName="MakeableDrugBase">
     <defName>MMeds_DandelionLeafTea</defName>
     <label>dandelion leaf tea</label>
-    <description>This tea made from medicinal herbs and dandelion leaves settles the stomach, stimulates the appetite and helps prevent the buildup of toxins in the liver and kidneys.</description>
+    <description>This tea made from medicinal herbs and dandelion leaves settles the stomach, stimulates the appetite and helps detoxify the liver and kidneys.</description>
     <descriptionHyperlinks>
       <HediffDef>MMeds_DandelionLeafTeaHigh</HediffDef>
     </descriptionHyperlinks>
@@ -68,12 +68,12 @@
         <severityPerDay>-0.48</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
+      <li Class="MMeds.HediffCompProperties_CureToxicBuildup">
+        <severityPerDay>-0.48</severityPerDay>
+      </li>
     </comps>
     <stages>
       <li>
-        <statOffsets>
-          <ToxicResistance>0.5</ToxicResistance>
-        </statOffsets>
         <hungerRateFactorOffset>0.3</hungerRateFactorOffset>
         <vomitMtbDays>-1.0</vomitMtbDays>
       </li>
