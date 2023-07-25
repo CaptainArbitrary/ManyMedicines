@@ -26,7 +26,7 @@ Tea made from daylily roots has antiemetic properties and can provide some relie
 
 <img alt="Dandelion Leaf Tea" src="Common/Textures/Things/Item/Drug/MMeds_DandelionLeafTea.png" align="left" width="64">
 
-This tea made from medicinal herbs and dandelion leaves helps to prevent the buildup of toxins in the liver and kidneys, as well as stimulating the appetite and settling the stomach.
+This tea made from medicinal herbs and dandelion leaves helps to detoxify the liver and kidneys, as well as stimulating the appetite and settling the stomach.
 
 ### Industrial Medicines
 
