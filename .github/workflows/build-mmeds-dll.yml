@@ -4,6 +4,7 @@ env:
   SLN_PATH: Source/Assemblies/MMeds/MMeds.sln
 
 on:
+  push:
   pull_request:
     paths:
       - 'Source/Assemblies/MMeds/*.cs'
