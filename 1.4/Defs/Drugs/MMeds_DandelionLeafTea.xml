@@ -7,6 +7,7 @@
     <description>This tea made from medicinal herbs and dandelion leaves settles the stomach, stimulates the appetite and helps detoxify the liver and kidneys.</description>
     <descriptionHyperlinks>
       <HediffDef>MMeds_DandelionLeafTeaHigh</HediffDef>
+      <HediffDef>MMeds_DandelionLeafTeaOverdose</HediffDef>
     </descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Item/Drug/MMeds_DandelionLeafTea</texPath>
