@@ -1,27 +1,23 @@
-name: Build Test
+name: Build DLL
 
 env:
   SLN_PATH: Source/Assemblies/MMeds/
 
 on:
   pull_request:
+    paths:
+      - '**.cs'
+      - '**.csproj'
+      - '**.sln'
 
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
     steps:
-
-    - name: Checkout Repository
-      uses: actions/checkout@v3.5.3
-
-    - name: Setup Dotnet
-      uses: actions/setup-dotnet@v3.2.0
+    - uses: actions/checkout@v3
+    - uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
-
-    - name: Install Mod Dependencies
-      run: dotnet restore ${{ env.SLN_PATH }}
-
-    - name: Build Mod
-      run: dotnet build ${{ env.SLN_PATH }} --configuration Release --no-restore
+    - run: dotnet restore ${{ env.SLN_PATH }}
+    - run: dotnet build ${{ env.SLN_PATH }} --configuration Release --no-restore
+    - run: dotnet test ${{ env.SLN_PATH }} --no-restore --verbosity normal
