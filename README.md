@@ -1,19 +1,26 @@
 # Many Medicines
 
-Many Medicines is a mod for [Rimworld](https://rimworldgame.com/). It adds several new medicines to the game that players can use to treat acute diseases, manage chronic conditions, or save lives.
+Many Medicines is a mod for the [Ludeon Studios](https://ludeon.com/) game [Rimworld](https://rimworldgame.com/). It adds several new [medical drugs](https://rimworldwiki.com/wiki/Medical_drugs) that players can use to treat acute diseases, manage chronic conditions, or save lives.
 
-This mod is made for Rimworld 1.4. DLCs are not required.
+This mod is made for Rimworld 1.4. DLCs are not supported but not required.
 
-<center>
-<img src="https://img.shields.io/github/license/CaptainArbitrary/ManyMedicines">
-<img src="https://img.shields.io/github/actions/workflow/status/CaptainArbitrary/ManyMedicines/build.yml">
-<img src="https://img.shields.io/github/commit-activity/t/CaptainArbitrary/ManyMedicines">
-<img src="https://img.shields.io/github/last-commit/CaptainArbitrary/ManyMedicines">
-</center>
+| :exclamation: | Many Medicines is currently under active development. A release to Steam Workshop is planned in the near-ish future, but remember that it'll be ready when it's ready. |
+|-|-|
 
-## Neolithic Medicines
+<p align="center">
 
-These medicines are available from the start of the game with no research required, and can be crafted at either a campfire or a crafting spot with no minimum skills.
+![License](https://img.shields.io/github/license/CaptainArbitrary/ManyMedicines?style=for-the-badge)
+![Build](https://img.shields.io/github/actions/workflow/status/CaptainArbitrary/ManyMedicines/build.yml?style=for-the-badge)
+![Commits](https://img.shields.io/github/commit-activity/t/CaptainArbitrary/ManyMedicines?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/CaptainArbitrary/ManyMedicines?style=for-the-badge)
+
+</p>
+
+These are the new medicial drugs added by the mod.
+
+## Neolithic Drugs
+
+These drugs are available from the start of the game with no research required, and can be crafted at either a campfire or a crafting spot with no minimum skills.
 
 ### Chicken Soup
 
@@ -39,9 +46,9 @@ Tea made from daylily roots has antiemetic properties and can provide some relie
 
 This tea made from medicinal herbs and dandelion leaves helps to detoxify the liver and kidneys, as well as stimulating the appetite and settling the stomach.
 
-## Industrial Medicines
+## Industrial Drugs
 
-These medicines have their own research projects, all of which have Drug Production as a prerequisite. They're more difficult and more expensive to manufacture, but they're much more effective than the neolithic medicines.
+These drugs have their own research projects, all of which have Drug Production as a prerequisite. They're more difficult and more expensive to manufacture, but they're much more effective than the neolithic medicines.
 
 ### Proxen
 
