@@ -32,7 +32,7 @@
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>MMeds_DandelionLeafTeaHigh</hediffDef>
-          <severity>1.0</severity>
+          <severity>0.25</severity>
         </li>
       </outcomeDoers>
     </ingestible>
@@ -65,7 +65,7 @@
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-3.98</severityPerDay>
+        <severityPerDay>-1.0</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
       <li Class="MMeds.HediffCompProperties_TreatToxicBuildup">
@@ -74,8 +74,47 @@
     </comps>
     <stages>
       <li>
+        <minSeverity>0.0</minSeverity>
+        <label>wearing off</label>
+        <hungerRateFactorOffset>0.1</hungerRateFactorOffset>
+      </li>
+      <li>
+        <minSeverity>0.1</minSeverity>
         <hungerRateFactorOffset>0.3</hungerRateFactorOffset>
         <vomitMtbDays>-1.0</vomitMtbDays>
+      </li>
+      <li>
+        <minSeverity>0.5</minSeverity>
+        <label>intoxicated</label>
+        <vomitMtbDays>0.7</vomitMtbDays>
+        <painOffset>0.3</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.7</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.7</minSeverity>
+        <label>overdosed</label>
+        <vomitMtbDays>0.167</vomitMtbDays>
+        <painOffset>0.5</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.5</postFactor>
+          </li>
+        </capMods>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>ChemicalDamageModerate</hediff>
+            <mtbDays>3</mtbDays>
+            <partsToAffect>
+              <li>Kidney</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
       </li>
     </stages>
   </HediffDef>
