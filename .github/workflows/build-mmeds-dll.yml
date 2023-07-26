@@ -9,7 +9,6 @@ on:
       - 'Source/Assemblies/MMeds/*.cs'
       - 'Source/Assemblies/MMeds/*.csproj'
       - 'Source/Assemblies/MMeds/*.sln'
-  workflow_dispatch:
 
 jobs:
   build:
@@ -22,16 +21,6 @@ jobs:
     - run: dotnet restore ${{ env.SLN_PATH }}
     - run: dotnet build ${{ env.SLN_PATH }} --configuration Release --no-restore
     - run: dotnet test ${{ env.SLN_PATH }} --no-restore --verbosity normal
-    - run: echo "Hello world"
-    # - uses: actions/upload-artifact@v3
-    #     with:
-    #       name: MMeds.dll
-    #       path: 1.4/Assemblies/MMeds.dll
-    # - uses: Shopify/upload-to-release@v1
-    #   with:
-    #     name: MMeds.dll
-    #     path: 1.4/Assemblies/MMeds.dll
-    #     repo-token: ${{ secrets.GITHUB_TOKEN }}
     - uses: actions/upload-artifact@v3
       with:
         name: MMeds.dll
