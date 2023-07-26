@@ -42,5 +42,10 @@ jobs:
 
     - uses: actions/upload-artifact@v3
       with:
-        name: ManyMedicines.zip
-        path: ${{ github.workspace }}
+        name: ManyMedicines
+        path: |
+          ${{ github.workspace }}
+          !.git
+          !.github
+          !.gitignore
+          !Source
