@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>MMeds_CoagulaseProduction</defName>
+    <label>coagulase production</label>
+    <tab>MMeds_ResearchTab</tab>
+    <description>Produce coagulase, a powerful coagulant.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+    <researchViewX>0.0</researchViewX>
+    <researchViewY>2.0</researchViewY>
+  </ResearchProjectDef>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>MMeds_Coagulase</defName>
+    <label>coagulase</label>
+    <description>A powerful coagulant. Injection temporarily stops all bleeding, stabilizing the patient and giving responders time to treat the patient's injuries. Heart attack and ischemic stroke are rare but potentially life-threatening complications.</description>
+    <descriptionHyperlinks>
+      <HediffDef>MMeds_CoagulaseHigh</HediffDef>
+      <HediffDef>HeartAttack</HediffDef>
+      <HediffDef>MMeds_IschemicStroke</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/MMeds_Coagulase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>800</WorkToMake>
+      <MarketValue>11.0</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <foodType>Processed, Fluid</foodType>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MMeds_CoagulaseHigh</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>MMeds_CoagulaseProduction</researchPrerequisite>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <productCount>1</productCount>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>4</Neutroamine>
+      <MedicineIndustrial>1</MedicineIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug" />
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>MMeds_CoagulaseHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>coagulase</label>
+    <description>Coagulase has temporarily stopped this person's bleeding, but the effect will wear off quickly.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-12</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <totalBleedFactor>0</totalBleedFactor>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>HeartAttack</hediff>
+            <allowOnLodgers>false</allowOnLodgers>
+            <allowOnQuestRewardPawns>false</allowOnQuestRewardPawns>
+            <mtbDays>0.5</mtbDays>
+            <partsToAffect>
+              <li>Heart</li>
+            </partsToAffect>
+          </li>
+          <li Class="HediffGiver_Random">
+            <hediff>MMeds_IschemicStroke</hediff>
+            <allowOnLodgers>false</allowOnLodgers>
+            <allowOnQuestRewardPawns>false</allowOnQuestRewardPawns>
+            <mtbDays>0.5</mtbDays>
+            <partsToAffect>
+              <li>Brain</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>
