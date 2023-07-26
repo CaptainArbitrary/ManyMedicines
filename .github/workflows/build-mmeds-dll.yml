@@ -22,7 +22,7 @@ jobs:
     - run: dotnet restore ${{ env.SLN_PATH }}
     - run: dotnet build ${{ env.SLN_PATH }} --configuration Debug --no-restore
     - run: dotnet test ${{ env.SLN_PATH }} --no-restore --verbosity normal
-    - run: find Assemblies/
+    - run: find 1.4/Assemblies/
     - uses: actions/upload-artifact@v3
       with:
         name: MMeds.dll
