@@ -1,0 +1,21 @@
+name: xmllint
+
+on:
+  pull_request:
+    paths:
+      - '**.xml'
+  workflow_dispatch:
+
+jobs:
+  xmllint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - run: sudo apt install -y libxml2-utils
+    - uses: tj-actions/glob@v17
+      id: glob
+      with:
+        files: |
+          **/*.xml
+    - run: |
+        xmllint --noout ${{ steps.glob.outputs.paths }}
