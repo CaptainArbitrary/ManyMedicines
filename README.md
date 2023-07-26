@@ -4,12 +4,12 @@ Many Medicines is a mod for [Rimworld](https://rimworldgame.com/). It adds sever
 
 This mod is made for Rimworld 1.4. DLCs are not required.
 
-<center>
+<p align="center">
 <img src="https://img.shields.io/github/license/CaptainArbitrary/ManyMedicines">
 <img src="https://img.shields.io/github/actions/workflow/status/CaptainArbitrary/ManyMedicines/build.yml">
 <img src="https://img.shields.io/github/commit-activity/t/CaptainArbitrary/ManyMedicines">
 <img src="https://img.shields.io/github/last-commit/CaptainArbitrary/ManyMedicines">
-</center>
+</p>
 
 ## Neolithic Medicines
 
