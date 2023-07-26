@@ -12,7 +12,7 @@ namespace MMeds
     {
         public HediffCompProperties_TreatToxicBuildup Props => (HediffCompProperties_TreatToxicBuildup)props;
 
-        private readonly int interval = 250;
+        private readonly int interval = 60;
 
         public override void CompPostTick(ref float severityAdjustment)
         {
