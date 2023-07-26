@@ -42,7 +42,7 @@ Tea made from daylily roots has antiemetic properties and can provide some relie
 
 <img alt="Dandelion Leaf Tea" src="Common/Textures/Things/Item/Drug/MMeds_DandelionLeafTea.png" align="left" width="64">
 
-This tea made from medicinal herbs and dandelion leaves helps to detoxify the body, as well as stimulating the appetite and settling the stomach. Excessive consumption causes grogginess accompanied by nausea and vomiting. Excessive doses can permanently damage the kidneys. Take no more often than every four to six hours.
+This tea made from medicinal herbs and dandelion leaves helps to detoxify the body, as well as stimulating the appetite and settling the stomach. Excessive consumption causes grogginess accompanied by nausea and vomiting. Very high doses can permanently damage the kidneys. Take no more often than every four to six hours.
 
 ## Industrial Drugs
 
