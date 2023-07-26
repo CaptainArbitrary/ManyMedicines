@@ -32,13 +32,7 @@ jobs:
     - run: |
         xmllint --noout ${{ steps.glob.outputs.paths }}
 
-    # package up the mod
-
-    # - run: zip -r9 ManyMedicines.zip * -x "Source/*"
-    # - uses: actions/upload-artifact@v3
-    #   with:
-    #     name: ManyMedicines
-    #     path: ManyMedicines.zip
+    # upload the mod as an artifact
 
     - uses: actions/upload-artifact@v3
       with:
