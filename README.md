@@ -9,9 +9,9 @@ This mod is made for Rimworld 1.4. DLCs are not supported but not required.
 
 <p align="center">
 <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/CaptainArbitrary/ManyMedicines?style=for-the-badge"></a>
-<img alt="Build" src="https://img.shields.io/github/actions/workflow/status/CaptainArbitrary/ManyMedicines/build.yml?style=for-the-badge">
-<img alt="Commits" src="https://img.shields.io/github/commit-activity/t/CaptainArbitrary/ManyMedicines?style=for-the-badge">
-<img alt="Last Commit" src="https://img.shields.io/github/last-commit/CaptainArbitrary/ManyMedicines?style=for-the-badge">
+<a href="https://github.com/CaptainArbitrary/ManyMedicines/actions"><img alt="Build" src="https://img.shields.io/github/actions/workflow/status/CaptainArbitrary/ManyMedicines/build.yml?style=for-the-badge"></a>
+<a href="https://github.com/CaptainArbitrary/ManyMedicines/commits/"><img alt="Commits" src="https://img.shields.io/github/commit-activity/t/CaptainArbitrary/ManyMedicines?style=for-the-badge"></a>
+<a href="https://github.com/CaptainArbitrary/ManyMedicines/commits/"><img alt="Last Commit" src="https://img.shields.io/github/last-commit/CaptainArbitrary/ManyMedicines?style=for-the-badge"></a>
 </p>
 
 These are the new medicial drugs added by the mod.
