@@ -97,8 +97,61 @@
       </li>
       <li>
         <minSeverity>0.7</minSeverity>
-        <label>overdosed</label>
-        <vomitMtbDays>0.167</vomitMtbDays>
+        <hediffGivers>
+          <li Class="HediffGiver_Refresh">
+            <hediff>MMeds_DandelionLeafTeaOverdose</hediff>
+          </li>
+          <li Class="HediffGiver_AddSeverity">
+            <hediff>MMeds_DandelionLeafTeaHigh</hediff>
+            <severityAmount>-1.0</severityAmount>
+            <mtbHours>0</mtbHours>
+          </li>
+        </hediffGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>MMeds_DandelionLeafTeaOverdose</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>dandelion leaf tea overdose</label>
+    <description>This person has drunk too much dandelion leaf tea. He or she will experience pain and nausea, and may suffer permanent kidney damage. The danger should pass in about a day.</description> <!-- FIXME: -->
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <initialSeverity>1.0</initialSeverity>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>true</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.98</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <minSeverity>0.0</minSeverity>
+        <vomitMtbDays>0.125</vomitMtbDays>
+        <painOffset>0.1</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.85</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.50</minSeverity>
+        <vomitMtbDays>0.125</vomitMtbDays>
+        <painOffset>0.25</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.75</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.75</minSeverity>
+        <vomitMtbDays>0.04</vomitMtbDays>
         <painOffset>0.5</painOffset>
         <capMods>
           <li>
@@ -108,8 +161,8 @@
         </capMods>
         <hediffGivers>
           <li Class="HediffGiver_Random">
-            <hediff>ChemicalDamageModerate</hediff>
-            <mtbDays>3</mtbDays>
+            <hediff>MMeds_ChemicalDamageMinor</hediff>
+            <mtbDays>2</mtbDays>
             <partsToAffect>
               <li>Kidney</li>
             </partsToAffect>
