@@ -1,14 +1,14 @@
-name: Build DLL
+name: Build MMeds.dll
 
 env:
-  SLN_PATH: Source/Assemblies/MMeds/
+  SLN_PATH: Source/Assemblies/MMeds/MMeds.sln
 
 on:
   pull_request:
     paths:
-      - '**.cs'
-      - '**.csproj'
-      - '**.sln'
+      - 'Source/Assemblies/MMeds/*.cs'
+      - 'Source/Assemblies/MMeds/*.csproj'
+      - 'Source/Assemblies/MMeds/*.sln'
 
 jobs:
   build:
