@@ -5,7 +5,7 @@
     <defName>MMeds_IschemicStroke</defName>
     <label>ischemic stroke</label>
     <labelNoun>an ischemic stroke</labelNoun>
-    <description>A potentially life-threatening clot that cuts off blood flow to a part of the brain. Even with successful treatment, there is a risk of permanent brain damage.</description>
+    <description>A potentially life-threatening clot that cuts off blood flow to a part of the brain.</description>
     <hediffClass>Hediff_HeartAttack</hediffClass>
     <defaultLabelColor>(1, 0.2, 0.2)</defaultLabelColor>
     <initialSeverity>0.4</initialSeverity>
@@ -13,7 +13,7 @@
     <tendable>true</tendable>
     <stages>
       <li>
-        <label>painful</label>
+        <label>moderate</label>
         <lifeThreatening>true</lifeThreatening>
         <painOffset>0.4</painOffset>
         <capMods>
@@ -22,18 +22,9 @@
             <postFactor>0.4</postFactor>
           </li>
         </capMods>
-        <hediffGivers>
-          <li Class="HediffGiver_Random">
-            <hediff>MMeds_BrainDamage</hediff>
-            <mtbDays>0.08</mtbDays>
-            <partsToAffect>
-              <li>Brain</li>
-            </partsToAffect>
-          </li>
-        </hediffGivers>
       </li>
       <li>
-        <label>debilitating</label>
+        <label>severe</label>
         <minSeverity>0.65</minSeverity>
         <lifeThreatening>true</lifeThreatening>
         <painOffset>0.6</painOffset>
@@ -43,15 +34,6 @@
             <setMax>0.1</setMax>
           </li>
         </capMods>
-        <hediffGivers>
-          <li Class="HediffGiver_Random">
-            <hediff>MMeds_BrainDamage</hediff>
-            <mtbDays>0.04</mtbDays>
-            <partsToAffect>
-              <li>Brain</li>
-            </partsToAffect>
-          </li>
-        </hediffGivers>
       </li>
       <li>
         <label>fatal</label>
@@ -63,15 +45,6 @@
             <setMax>0.01</setMax>
           </li>
         </capMods>
-        <hediffGivers>
-          <li Class="HediffGiver_Random">
-            <hediff>MMeds_BrainDamage</hediff>
-            <mtbDays>0.2</mtbDays>
-            <partsToAffect>
-              <li>Brain</li>
-            </partsToAffect>
-          </li>
-        </hediffGivers>
       </li>
     </stages>
   </HediffDef>
