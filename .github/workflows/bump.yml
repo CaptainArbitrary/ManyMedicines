@@ -1,6 +1,9 @@
 name: Bump
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     types:
       - closed
@@ -9,7 +12,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  bump:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     permissions:
