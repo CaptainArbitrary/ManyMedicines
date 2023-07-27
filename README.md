@@ -65,3 +65,9 @@ Mycin is a synthetic broad-spectrum antimicrobial that boosts the body's natural
 <img alt="Lopram" src="Common/Textures/Things/Item/Drug/MMeds_Lopram/MMeds_Lopram_b.png"  align="left" width="64">
 
 Lopram is a synthetic antidepressant. When taken daily it significantly improves mood, but developing a dependence on the drug is extremely likely. Withdrawal symptoms include aches and pains, nausea, irritability, sleeplessness and depression lasting three to four days after the last dose taken. It is best to start a course of treatment with lopram only when a steady supply of the drug can be guaranteed.
+
+### Coagulase
+
+<img alt="Coagulase" src="Common/Textures/Things/Item/Drug/MMeds_Coagulase.png" align="left" width="64">
+
+Coagulase is a powerful intravenous coagulant that when administered temporarily stops all bleeding. It can be self-administered, or given to a person who requires aid. Effects last for about two hours. Potentially life-threatening complications include heart attack and ischemic stroke.

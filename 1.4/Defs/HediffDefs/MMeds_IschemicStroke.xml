@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <defName>MMeds_IschemicStroke</defName>
+    <label>ischemic stroke</label>
+    <labelNoun>an ischemic stroke</labelNoun>
+    <description>A potentially life-threatening clot that cuts off blood flow to a part of the brain.</description>
+    <hediffClass>Hediff_HeartAttack</hediffClass>
+    <defaultLabelColor>(1, 0.2, 0.2)</defaultLabelColor>
+    <initialSeverity>0.4</initialSeverity>
+    <lethalSeverity>1.0</lethalSeverity>
+    <tendable>true</tendable>
+    <stages>
+      <li>
+        <label>moderate</label>
+        <lifeThreatening>true</lifeThreatening>
+        <painOffset>0.4</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>0.4</postFactor>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>severe</label>
+        <minSeverity>0.65</minSeverity>
+        <lifeThreatening>true</lifeThreatening>
+        <painOffset>0.6</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>fatal</label>
+        <minSeverity>0.9</minSeverity>
+        <lifeThreatening>true</lifeThreatening>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.01</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>
