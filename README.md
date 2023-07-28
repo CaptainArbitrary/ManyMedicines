@@ -1,18 +1,19 @@
 # Many Medicines
 
+[![License](https://img.shields.io/github/license/CaptainArbitrary/ManyMedicines?style=for-the-badge)](LICENSE)
+&emsp;
+[![CI Status](https://img.shields.io/github/actions/workflow/status/CaptainArbitrary/ManyMedicines/ci.yml?style=for-the-badge&label=CI)](https://github.com/CaptainArbitrary/ManyMedicines/actions/workflows/ci.yml)
+&emsp;
+[![Bug Issues](https://img.shields.io/github/issues/CaptainArbitrary/ManyMedicines/bug?style=for-the-badge)](https://github.com/CaptainArbitrary/ManyMedicines/labels/bug)
+&emsp;
+[![Enhancement Issues](https://img.shields.io/github/issues/CaptainArbitrary/ManyMedicines/enhancement?style=for-the-badge)](https://github.com/CaptainArbitrary/ManyMedicines/labels/enhancement)
+
 Many Medicines is a mod for the [Ludeon Studios](https://ludeon.com/) game [Rimworld](https://rimworldgame.com/). It adds several new [medical drugs](https://rimworldwiki.com/wiki/Medical_drugs) that players can use to treat acute diseases, manage chronic conditions, or save lives.
 
 This mod is made for Rimworld 1.4. DLCs are not supported but not required.
 
 | :exclamation: | Many Medicines is currently under active development. A release to Steam Workshop is planned in the near-ish future, but remember that it'll be ready when it's ready. |
 |-|-|
-
-<p align="center">
-<a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/CaptainArbitrary/ManyMedicines?style=for-the-badge"></a>
-<a href="https://github.com/CaptainArbitrary/ManyMedicines/actions"><img alt="Build" src="https://img.shields.io/github/actions/workflow/status/CaptainArbitrary/ManyMedicines/build.yml?style=for-the-badge"></a>
-<a href="https://github.com/CaptainArbitrary/ManyMedicines/commits/"><img alt="Commits" src="https://img.shields.io/github/commit-activity/t/CaptainArbitrary/ManyMedicines?style=for-the-badge"></a>
-<a href="https://github.com/CaptainArbitrary/ManyMedicines/commits/"><img alt="Last Commit" src="https://img.shields.io/github/last-commit/CaptainArbitrary/ManyMedicines?style=for-the-badge"></a>
-</p>
 
 These are the new medicial drugs added by the mod.
 
@@ -42,7 +43,7 @@ Tea made from daylily roots has antiemetic properties and can provide some relie
 
 <img alt="Dandelion Leaf Tea" src="Common/Textures/Things/Item/Drug/MMeds_DandelionLeafTea.png" align="left" width="64">
 
-This tea made from medicinal herbs and dandelion leaves helps to detoxify the body, as well as stimulating the appetite and settling the stomach. Excessive consumption causes grogginess accompanied by nausea and vomiting. Very high doses can permanently damage the kidneys. Take no more often than every four to six hours.
+This tea made from medicinal herbs and dandelion leaves helps to detoxify the body, as well as stimulating the appetite and settling the stomach. Drinking too much can cause grogginess and nausea, and has a chance of permanently damaging the kidneys. Take no more often than every six hours.
 
 ## Industrial Drugs
 
@@ -65,3 +66,9 @@ Mycin is a synthetic broad-spectrum antimicrobial that boosts the body's natural
 <img alt="Lopram" src="Common/Textures/Things/Item/Drug/MMeds_Lopram/MMeds_Lopram_b.png"  align="left" width="64">
 
 Lopram is a synthetic antidepressant. When taken daily it significantly improves mood, but developing a dependence on the drug is extremely likely. Withdrawal symptoms include aches and pains, nausea, irritability, sleeplessness and depression lasting three to four days after the last dose taken. It is best to start a course of treatment with lopram only when a steady supply of the drug can be guaranteed.
+
+### Coagulase
+
+<img alt="Coagulase" src="Common/Textures/Things/Item/Drug/MMeds_Coagulase.png" align="left" width="64">
+
+Coagulase is a powerful intravenous coagulant that when administered temporarily stops all bleeding. It can be self-administered, or given to a person who requires aid. Effects last for about two hours. Potentially life-threatening complications include heart attack and ischemic stroke.
