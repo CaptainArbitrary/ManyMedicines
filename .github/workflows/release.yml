@@ -1,9 +1,9 @@
 name: Release
 
 env:
-  MOD_NAME: RimworldCI
-  SOLUTION_PATH: Source/Assemblies/Rimworld-CI/Rimworld-CI.sln
-  FILES_TO_INCLUDE: 1.4 About License LoadFolders.xml
+  MOD_NAME: ManyMedicines
+  SOLUTION_PATH: Source/Assemblies/MMeds/MMeds.sln
+  FILES_TO_INCLUDE: 1.4 About Common LICENSE LoadFolders.xml
 
 on:
   pull_request:
