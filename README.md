@@ -1,7 +1,6 @@
 # Many Medicines
 
-[![Built for RimWorld 1.4](https://img.shields.io/badge/Built_for_RimWorld-1.4-blue?style=for-the-badge
-)](https://rimworldgame.com/)
+[![Built for RimWorld](https://img.shields.io/badge/dynamic/xml?url=https%3A%2F%2Fraw.githubusercontent.com%2FCaptainArbitrary%2FManyMedicines%2Fmain%2FAbout%2FAbout.xml&query=%2FModMetaData%2FsupportedVersions%2Fli%5Blast()%5D&style=for-the-badge&label=Built%20for%20RimWorld)](https://rimworldgame.com/)
 &emsp;
 [![License](https://img.shields.io/github/license/CaptainArbitrary/ManyMedicines?style=for-the-badge)](LICENSE)
 &emsp;
