@@ -60,7 +60,7 @@ These drugs have their own research projects, all of which have Drug Production 
 
 <img alt="Proxen" src="Common/Textures/Things/Item/Drug/MMeds_Proxen/MMeds_Proxen_b.png" align="left" width="128">
 
-Proxen is a mild analgesic. Non-additive and non-tolerance-forming, but only really useful for providing partial relief from pain. Effects peak about one hour after administration, then gradually taper off over the next 11 hours. Take two to three times a day for best results.
+Proxen is a mild analgesic. Non-addictive and non-tolerance-forming, but only really useful for providing partial relief from pain. Effects peak about one hour after administration, then gradually taper off over the next 11 hours. Take two to three times a day for best results.
 
 Research prerequisite: Proxen Production (requires Drug Production). This drug is synthesized at a drug lab out of one neutroamine, yielding four doses of proxen. At peak effectiveness, proxen reduces pain by a flat 50% across the board, tapering off over six hours. Overdosing on proxen _increases_ pain by 80% and reduces consciousness by 80%, usually requiring bed rest. The effects of the overdose are _not_ life-threatening and resolve in about two days.
 
