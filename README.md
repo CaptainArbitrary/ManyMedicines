@@ -30,7 +30,7 @@ The ingredients are five of any raw meat, five of any raw plant food and one her
 
 #### Rose Petal Tea
 
-<img alt="Rose Petal Tea" src="Common/Textures/Things/Item/Drug/MMeds_RosePetalTea.png" align="left" width="64">
+<img alt="Rose Petal Tea" src="Common/Textures/Things/Item/Drug/MMeds_RosePetalTea.png" align="left" width="128">
 
 This tea made from rose petals and medicinal herbs relieves stress, promotes good circulation and speeds healing. Its effects are quite mild, but it's free from harmful side effects so it can be consumed frequently without risk of damage or dependence.
 
@@ -38,7 +38,7 @@ The ingredients are 10 rose petals and one herbal medicine; can be brewed over a
 
 #### Daylily Root Tea
 
-<img alt="Daylily Root Tea" src="Common/Textures/Things/Item/Drug/MMeds_DaylilyRootTea.png" align="left" width="64">
+<img alt="Daylily Root Tea" src="Common/Textures/Things/Item/Drug/MMeds_DaylilyRootTea.png" align="left" width="128">
 
 Tea made from daylily roots has antiemetic properties and can provide some relief from food poisoning, gut worms and other gastrointestinal maladies.
 
@@ -46,7 +46,7 @@ This tea can be brewed over a campfire or at a stove from three daylily roots. I
 
 #### Dandelion Leaf Tea
 
-<img alt="Dandelion Leaf Tea" src="Common/Textures/Things/Item/Drug/MMeds_DandelionLeafTea.png" align="left" width="64">
+<img alt="Dandelion Leaf Tea" src="Common/Textures/Things/Item/Drug/MMeds_DandelionLeafTea.png" align="left" width="128">
 
 This tea made from medicinal herbs and dandelion leaves helps to detoxify the body, as well as stimulating the appetite and settling the stomach. Drinking too much can cause grogginess and nausea, and has a chance of permanently damaging the kidneys. Take no more often than every six hours.
 
@@ -58,7 +58,7 @@ These drugs have their own research projects, all of which have Drug Production 
 
 #### Proxen
 
-<img alt="Proxen" src="Common/Textures/Things/Item/Drug/MMeds_Proxen/MMeds_Proxen_b.png" align="left" width="64">
+<img alt="Proxen" src="Common/Textures/Things/Item/Drug/MMeds_Proxen/MMeds_Proxen_b.png" align="left" width="128">
 
 Proxen is a mild analgesic. Non-additive and non-tolerance-forming, but only really useful for providing partial relief from pain. Effects peak about one hour after administration, then gradually taper off over the next 11 hours. Take two to three times a day for best results.
 
@@ -66,7 +66,7 @@ Research prerequisite: Proxen Production (requires Drug Production). This drug i
 
 #### Mycin
 
-<img alt="Mycin" src="Common/Textures/Things/Item/Drug/MMeds_Mycin/MMeds_Mycin_b.png" align="left" width="64">
+<img alt="Mycin" src="Common/Textures/Things/Item/Drug/MMeds_Mycin/MMeds_Mycin_b.png" align="left" width="128">
 
 Mycin is a synthetic broad-spectrum antimicrobial that boosts the body's natural immune response to bacterial, viral, parasitic and fungal infections. Can be administered responsively to treat infections, or prophylactically to prevent infections. Take daily for best results.
 
@@ -74,7 +74,7 @@ Research prerequisite: Mycin Production (requires Drug Production). Synthesized 
 
 #### Lopram
 
-<img alt="Lopram" src="Common/Textures/Things/Item/Drug/MMeds_Lopram/MMeds_Lopram_b.png"  align="left" width="64">
+<img alt="Lopram" src="Common/Textures/Things/Item/Drug/MMeds_Lopram/MMeds_Lopram_b.png"  align="left" width="128">
 
 Lopram is a synthetic antidepressant. When taken daily it significantly improves mood, but developing a dependence on the drug is extremely likely. Withdrawal symptoms include aches and pains, nausea, irritability, sleeplessness and depression lasting three to four days after the last dose taken. It is best to start a course of treatment with lopram only when a steady supply of the drug can be guaranteed.
 
@@ -82,7 +82,7 @@ Research prerequisite: Lopram Production (requires Drug Production). Synthesized
 
 #### Coagulase
 
-<img alt="Coagulase" src="Common/Textures/Things/Item/Drug/MMeds_Coagulase.png" align="left" width="64">
+<img alt="Coagulase" src="Common/Textures/Things/Item/Drug/MMeds_Coagulase.png" align="left" width="128">
 
 Coagulase is a powerful intravenous coagulant that when administered temporarily stops all bleeding. It can be self-administered, or given to a person who requires aid. Effects last for about two hours. Potentially life-threatening complications include heart attack and ischemic stroke.
 
