@@ -2,10 +2,12 @@
 
 [![Built for RimWorld 1.4](https://img.shields.io/badge/Built_for_RimWorld-1.4-blue?style=for-the-badge
 )](https://rimworldgame.com/)
+&emsp;
 [![License](https://img.shields.io/github/license/CaptainArbitrary/ManyMedicines?style=for-the-badge)](LICENSE)
+&emsp;
 [![CI Status](https://img.shields.io/github/actions/workflow/status/CaptainArbitrary/ManyMedicines/ci.yml?style=for-the-badge&label=CI)](https://github.com/CaptainArbitrary/ManyMedicines/actions/workflows/ci.yml)
-[![Bug Issues](https://img.shields.io/github/issues/CaptainArbitrary/ManyMedicines/bug?style=for-the-badge)](https://github.com/CaptainArbitrary/ManyMedicines/labels/bug)
-[![Enhancement Issues](https://img.shields.io/github/issues/CaptainArbitrary/ManyMedicines/enhancement?style=for-the-badge)](https://github.com/CaptainArbitrary/ManyMedicines/labels/enhancement)
+&emsp;
+[![Issues](https://img.shields.io/github/issues/CaptainArbitrary/ManyMedicines?style=for-the-badge)](https://github.com/CaptainArbitrary/ManyMedicines/labels/bug)
 
 Many Medicines is a [mod](https://rimworldwiki.com/wiki/Mods) for the [Ludeon Studios](https://ludeon.com/) game [Rimworld](https://rimworldgame.com/). It adds several new [medical drugs](https://rimworldwiki.com/wiki/Medical_drugs) that players can use to treat acute diseases, manage chronic conditions, or save lives.
 
