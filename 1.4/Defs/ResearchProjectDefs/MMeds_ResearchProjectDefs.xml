@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>MMeds_ProxenProduction</defName>
+    <label>proxen production</label>
+    <tab>MMeds_ResearchTab</tab>
+    <description>Produce proxen, a mild analgesic.</description>
+    <baseCost>200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MMeds_LopramProduction</defName>
+    <label>lopram production</label>
+    <tab>MMeds_ResearchTab</tab>
+    <description>Produce lopram, an antidepressant.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MMeds_QuelProduction</defName>
+    <label>quel production</label>
+    <tab>MMeds_ResearchTab</tab>
+    <description>Produce quel, an antipsychotic.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+    <researchViewX>0.0</researchViewX>
+    <researchViewY>1.4</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MMeds_MycinProduction</defName>
+    <label>mycin production</label>
+    <tab>MMeds_ResearchTab</tab>
+    <description>Produce mycin, an immunostimulant.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+    <researchViewX>0.0</researchViewX>
+    <researchViewY>2.1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MMeds_CoagulaseProduction</defName>
+    <label>coagulase production</label>
+    <tab>MMeds_ResearchTab</tab>
+    <description>Produce coagulase, a powerful coagulant.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+    <researchViewX>0.0</researchViewX>
+    <researchViewY>2.8</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

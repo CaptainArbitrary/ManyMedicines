@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ResearchProjectDef>
-    <defName>MMeds_QuelProduction</defName>
-    <label>quel production</label>
-    <tab>MMeds_ResearchTab</tab>
-    <description>Produce quel, an antipsychotic.</description>
-    <baseCost>300</baseCost>
-    <techLevel>Industrial</techLevel>
-    <prerequisites>
-      <li>DrugProduction</li>
-    </prerequisites>
-    <researchViewX>0.0</researchViewX>
-    <researchViewY>2.0</researchViewY>
-  </ResearchProjectDef>
-
   <ThingDef ParentName="MakeableDrugPillBase">
     <defName>MMeds_Quel</defName>
     <label>quel</label>
