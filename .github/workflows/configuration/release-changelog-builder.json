@@ -7,6 +7,10 @@
     {
       "title": "## Bug Fixes",
       "labels": [ "bug" ]
+    },
+    {
+      "title": "## Trivia",
+      "labels": [ "chore" ]
     }
   ],
   "sort": {
