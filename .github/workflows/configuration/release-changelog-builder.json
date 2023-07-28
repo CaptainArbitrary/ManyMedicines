@@ -17,6 +17,6 @@
     "order": "ASC",
     "on_property": "mergedAt"
   },
-  "template": "${{CHANGELOG}}",
-  "pr_template": "#### **${{TITLE}}** ([PR #${{NUMBER}}](${{URL}})) \n\n${{BODY}}\n\n"
+  "template": "${{CHANGELOG}}\n\n**Full Changelog: https://github.com/CaptainArbitrary/ManyMedicines/compare/${{FROM_TAG}}...${{TO_TAG}}",
+  "pr_template": "- **${{TITLE}}** ([PR #${{NUMBER}}](${{URL}})) by @${{AUTHOR}}\n"
 }
