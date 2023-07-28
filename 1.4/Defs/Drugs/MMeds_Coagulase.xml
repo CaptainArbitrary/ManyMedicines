@@ -90,7 +90,7 @@
             <hediff>HeartAttack</hediff>
             <allowOnLodgers>false</allowOnLodgers>
             <allowOnQuestRewardPawns>false</allowOnQuestRewardPawns>
-            <mtbDays>0.5</mtbDays>
+            <mtbDays>0.25</mtbDays>
             <partsToAffect>
               <li>Heart</li>
             </partsToAffect>
@@ -99,7 +99,7 @@
             <hediff>MMeds_IschemicStroke</hediff>
             <allowOnLodgers>false</allowOnLodgers>
             <allowOnQuestRewardPawns>false</allowOnQuestRewardPawns>
-            <mtbDays>0.5</mtbDays>
+            <mtbDays>0.25</mtbDays>
             <partsToAffect>
               <li>Brain</li>
             </partsToAffect>
