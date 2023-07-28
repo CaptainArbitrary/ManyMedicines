@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName = "MMeds_ChickenSoupHigh"]/stages/li[4]/makeImmuneTo</xpath>
+    <value>
+      <li>CA_CommonCold</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName = "MMeds_ProxenHigh"]/stages/li[5]</xpath>
+    <value>
+      <makeImmuneTo>
+        <li>CA_Headache</li>
+      </makeImmuneTo>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName = "MMeds_MycinHigh"]/stages/li/makeImmuneTo</xpath>
+    <value>
+      <li>CA_CommonCold</li>
+      <li>CA_Conjunctivitis</li>
+      <li>CA_Minor_STD</li>
+      <li>CA_Sinusitis</li>
+      <li>CA_SoreThroat</li>
+    </value>
+  </Operation>
+
+</Patch>
