@@ -7,10 +7,6 @@
     {
       "title": "## Bug Fixes",
       "labels": [ "bug" ]
-    },
-    {
-      "title": "## Documentation Changes",
-      "labels": [ "documentation" ]
     }
   ],
   "sort": {
