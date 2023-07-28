@@ -20,11 +20,15 @@ These drugs are available from the start of the game with no research required, 
 
 This simple broth of meat, vegetables and medicinal herbs makes one feel better when one is sick. It starts spoiling almost immediately, though, so best consume it while it's very fresh. For reasons lost to history, this broth is universally called "chicken soup" even though it can be made from almost any ingredients.
 
+The ingredients are five of any raw meat, five of any raw plant food and one herbal medicine; can be cooked over a campfire or at a stove. Increases blood filtration by a maximum of 20% and makes the pawn immune to the flu. Effects gradually taper off over about a day.
+
 ### Rose Petal Tea
 
 <img alt="Rose Petal Tea" src="Common/Textures/Things/Item/Drug/MMeds_RosePetalTea.png" align="left" width="64">
 
 This tea made from rose petals and medicinal herbs relieves stress, promotes good circulation and speeds healing. Its effects are quite mild, but it's free from harmful side effects so it can be consumed frequently without risk of damage or dependence.
+
+The ingredients are 10 rose petals and one herbal medicine; can be brewed over a campfire or at a stove. At peak effect, it reduces the pawn's mental break threshold by a maximum of 0.2, increases blood pumping by 6%, and improves injury healing by 8%. Effects gradually taper off over about a day.
 
 ### Daylily Root Tea
 
@@ -32,11 +36,15 @@ This tea made from rose petals and medicinal herbs relieves stress, promotes goo
 
 Tea made from daylily roots has antiemetic properties and can provide some relief from food poisoning, gut worms and other gastrointestinal maladies.
 
+This tea can be brewed over a campfire or at a stove from three daylily roots. It prevents vomiting for about nine hours.
+
 ### Dandelion Leaf Tea
 
 <img alt="Dandelion Leaf Tea" src="Common/Textures/Things/Item/Drug/MMeds_DandelionLeafTea.png" align="left" width="64">
 
 This tea made from medicinal herbs and dandelion leaves helps to detoxify the body, as well as stimulating the appetite and settling the stomach. Drinking too much can cause grogginess and nausea, and has a chance of permanently damaging the kidneys. Take no more often than every six hours.
+
+Dandelion leaf tea is brewed from four dandelion leaves and one herbal medicine over a campfire or at a stove. It accelerates the rate at which the body clears accumulated toxic buildup by an additional 0.24 severity per day. It also increases the pawn's hunger rate by 30% and prevents vomiting. At higher doses, it increases the pawn's pain by 30%, reduces the pawn's consciousness by 30%, and _causes_ vomiting. At even higher doses overdose occurs, which increases pain by 50%, reduces consciousness by 50% and has a chance of causing minor chemical damage to one or both kidneys (part efficiency -10%).
 
 ## Industrial Drugs
 
