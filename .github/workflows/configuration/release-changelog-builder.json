@@ -9,8 +9,8 @@
       "labels": [ "bug" ]
     },
     {
-      "title": "## Documentation Changes",
-      "labels": [ "documentation" ]
+      "title": "## Trivia",
+      "labels": [ "chore" ]
     }
   ],
   "sort": {
@@ -18,5 +18,5 @@
     "on_property": "mergedAt"
   },
   "template": "${{CHANGELOG}}",
-  "pr_template": "- **${{TITLE}}** ([pull request ${{NUMBER}}](${{URL}}))\n\n${{BODY}}"
+  "pr_template": "#### **${{TITLE}}** ([PR #${{NUMBER}}](${{URL}})) \n\n${{BODY}}\n\n"
 }
