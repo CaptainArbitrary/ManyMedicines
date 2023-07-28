@@ -84,7 +84,9 @@ Research prerequisite: Lopram Production (requires Drug Production). Synthesized
 
 <img alt="Coagulase" src="Common/Textures/Things/Item/Drug/MMeds_Coagulase.png" align="left" width="128">
 
-Coagulase is a powerful intravenous coagulant that when administered temporarily stops all bleeding. It can be self-administered, or given to a person who requires aid. Effects last for about two hours. Potentially life-threatening complications include heart attack and ischemic stroke.
+Coagulase is a powerful intravenous coagulant that when administered temporarily stops all bleeding. It can be self-administered, or given to a person who requires aid. Unfortunately clots have a tendency to form in places like the coronary arteries and the arteries of the brain, so the risks of life-threatening complication are significant. Coagulase should only be used in medical emergencies.
+
+Research prerequisite: Coagulase Production (requires Drug Production). Synthesized at a drug lab from four neutroamine and one industrial medicine. When administered, coagulase immediately stops all bleeding, but has a chance of causing a heart attack or an ischemic stroke. Note that if the Biotech DLC is installed, the recipe for coagulase is three neutroamine and one hemogen pack.
 
 ---
 
