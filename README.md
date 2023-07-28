@@ -56,17 +56,23 @@ These drugs have their own research projects, all of which have Drug Production 
 
 Proxen is a mild analgesic. Non-additive and non-tolerance-forming, but only really useful for providing partial relief from pain. Effects peak about one hour after administration, then gradually taper off over the next 11 hours. Take two to three times a day for best results.
 
+Research prerequisite: Proxen Production (requires Drug Production). This drug is synthesized at a drug lab out of one neutroamine, yielding four doses of proxen. At peak effectiveness, proxen reduces pain by a flat 50% across the board, tapering off over six hours. Overdosing on proxen _increases_ pain by 80% and reduces consciousness by 80%, usually requiring bed rest. The effects of the overdose are _not_ life-threatening and resolve in about two days.
+
 ### Mycin
 
 <img alt="Mycin" src="Common/Textures/Things/Item/Drug/MMeds_Mycin/MMeds_Mycin_b.png" align="left" width="64">
 
 Mycin is a synthetic broad-spectrum antimicrobial that boosts the body's natural immune response to bacterial, viral, parasitic and fungal infections. Can be administered responsively to treat infections, or prophylactically to prevent infections. Take daily for best results.
 
+Research prerequisite: Mycin Production (requires Drug Production). Synthesized at a drug lab from one neutroamine and two herbal medicine, yielding three doses. Speeds immunity gain by 24% for about a day; also prevents wound infections, so mycin can be given prophylactically to wounded pawns if desired.
+
 ### Lopram
 
 <img alt="Lopram" src="Common/Textures/Things/Item/Drug/MMeds_Lopram/MMeds_Lopram_b.png"  align="left" width="64">
 
 Lopram is a synthetic antidepressant. When taken daily it significantly improves mood, but developing a dependence on the drug is extremely likely. Withdrawal symptoms include aches and pains, nausea, irritability, sleeplessness and depression lasting three to four days after the last dose taken. It is best to start a course of treatment with lopram only when a steady supply of the drug can be guaranteed.
+
+Research prerequisite: Lopram Production (requires Drug Production). Synthesized at a drug lab; one neutroamine yields two doses of lopram. One dose gives a +12 boost to a pawn's mood for 24 hours. It also increases the hunger rate and the rest fall rate by 20% each. Repeated use of lopram quickly leads to dependence on the drug. Discontinuation adds a mood malus of -35. It also causes occasional vomiting, increases pain by 30%, increases the pawn's chance of starting social fights by a factor of five, and reduces the pawn's rest fall rate by 40%. Withdrawal lasts about four days but is at no point life-threatening.
 
 ### Coagulase
 
