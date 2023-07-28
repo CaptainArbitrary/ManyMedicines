@@ -1,22 +1,18 @@
 {
   "categories": [
     {
-      "title": "## New Features",
+      "title": "### New Features",
       "labels": [ "enhancement" ]
     },
     {
-      "title": "## Bug Fixes",
+      "title": "### Bug Fixes",
       "labels": [ "bug" ]
-    },
-    {
-      "title": "## Trivia",
-      "labels": [ "chore" ]
     }
   ],
   "sort": {
     "order": "ASC",
     "on_property": "mergedAt"
   },
-  "template": "${{CHANGELOG}}\n\n**Full Changelog: https://github.com/CaptainArbitrary/ManyMedicines/compare/${{FROM_TAG}}...${{TO_TAG}}",
-  "pr_template": "- **${{TITLE}}** ([PR #${{NUMBER}}](${{URL}})) by @${{AUTHOR}}\n"
+  "template": "${{CHANGELOG}}\n\n### Full Changelog\n\n- https://github.com/CaptainArbitrary/ManyMedicines/compare/${{FROM_TAG}}...${{TO_TAG}}",
+  "pr_template": "- **${{TITLE}}** ([PR #${{NUMBER}}](${{URL}}) by @${{AUTHOR}})\n"
 }
