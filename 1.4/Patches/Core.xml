@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName = "Plant_Dandelion"]/plant</xpath>
+    <value>
+      <harvestYield>4</harvestYield>
+      <harvestWork>100</harvestWork>
+      <harvestedThingDef>MMeds_RawDandelionLeaves</harvestedThingDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName = "Plant_Daylily"]/plant</xpath>
+    <value>
+      <harvestYield>3</harvestYield>
+      <harvestWork>250</harvestWork>
+      <harvestedThingDef>MMeds_RawDaylilyRoots</harvestedThingDef>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName = "Plant_Rose"]/plant</xpath>
+    <value>
+      <harvestYield>6</harvestYield>
+      <harvestWork>200</harvestWork>
+      <harvestedThingDef>MMeds_RawRosePetals</harvestedThingDef>
+    </value>
+  </Operation>
+
+</Patch>
