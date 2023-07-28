@@ -8,7 +8,7 @@
 &emsp;
 [![Enhancement Issues](https://img.shields.io/github/issues/CaptainArbitrary/ManyMedicines/enhancement?style=for-the-badge)](https://github.com/CaptainArbitrary/ManyMedicines/labels/enhancement)
 
-Many Medicines is a mod for the [Ludeon Studios](https://ludeon.com/) game [Rimworld](https://rimworldgame.com/). It adds several new [medical drugs](https://rimworldwiki.com/wiki/Medical_drugs) that players can use to treat acute diseases, manage chronic conditions, or save lives.
+Many Medicines is a [mod](https://rimworldwiki.com/wiki/Mods) for the [Ludeon Studios](https://ludeon.com/) game [Rimworld](https://rimworldgame.com/). It adds several new [medical drugs](https://rimworldwiki.com/wiki/Medical_drugs) that players can use to treat acute diseases, manage chronic conditions, or save lives.
 
 This mod is made for Rimworld 1.4. DLCs are supported but not required.
 
