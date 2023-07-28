@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>MMeds_QuelProduction</defName>
+    <label>quel production</label>
+    <tab>MMeds_ResearchTab</tab>
+    <description>Produce quel, an antipsychotic.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+    <researchViewX>0.0</researchViewX>
+    <researchViewY>2.0</researchViewY>
+  </ResearchProjectDef>
+
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>MMeds_Quel</defName>
+    <label>quel</label>
+    <description>A synthetic antipsychotic that drastically reduces the chances of a mental break. Side effects can be severe, including drowsiness and weight gain. Long-term use results in tolerance and, if discontinued, withdrawal.</description>
+    <descriptionHyperlinks>
+      <HediffDef>MMeds_QuelHigh</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/MMeds_Quel</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>1200</WorkToMake>
+      <MarketValue>2.95</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MMeds_QuelHigh</hediffDef>
+          <severity>0.5</severity>
+          <toleranceChemical>MMeds_QuelChemical</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MMeds_QuelTolerance</hediffDef>
+          <severity>0.25</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>MMeds_QuelProduction</researchPrerequisite>
+      <skillRequirements>
+        <Intellectual>6</Intellectual>
+      </skillRequirements>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <productCount>2</productCount>
+    </recipeMaker>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>MMeds_QuelChemical</chemical>
+        <addictiveness>0.25</addictiveness>
+        <minToleranceToAddict>0.5</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0.2</existingAddictionSeverityOffset>
+        <needLevelOffset>0.85</needLevelOffset>
+        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+        <largeOverdoseChance>0.01</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>MMeds_QuelHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>quel</label>
+    <description>Quel in the bloodstream, drastically reducing this person's chance of a mental break.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.52</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <MentalBreakThreshold>-0.40</MentalBreakThreshold>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.9</setMax>
+          </li>
+        </capMods>
+        <hungerRateFactor>1.4</hungerRateFactor>
+        <restFallFactor>1.2</restFallFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ChemicalDef>
+    <defName>MMeds_QuelChemical</defName>
+    <label>quel</label>
+    <toleranceHediff>MMeds_QuelTolerance</toleranceHediff>
+    <addictionHediff>MMeds_QuelAddiction</addictionHediff>
+    <canBinge>false</canBinge>
+    <generateAddictionGenes>false</generateAddictionGenes>
+  </ChemicalDef>
+
+  <HediffDef>
+    <defName>MMeds_QuelTolerance</defName>
+    <label>quel tolerance</label>
+    <description>A built-up tolerance to quel. The more severe this tolerance is, the more quel it takes to get the same effect.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <minSeverity>0.0</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <minSeverity>0.5</minSeverity>
+        <becomeVisible>true</becomeVisible>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.15</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>MMeds_QuelChemical</chemical>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>MMeds_QuelNeed</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>quel</label>
+    <description>This person needs to take quel daily to avoid withdrawal symptoms.</description>
+    <fallPerDay>1.15</fallPerDay>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+  </NeedDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>MMeds_QuelAddiction</defName>
+    <label>quel dependence </label>
+    <description>A chemical dependence on the antipsychotic quel. Discontinuation of the drug can result in rebound effects on this person's mental state.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <causesNeed>MMeds_QuelNeed</causesNeed>
+    <initialSeverity>0.5</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.06</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <painOffset>0.10</painOffset>
+        <hungerRateFactor>1.6</hungerRateFactor>
+        <restFallFactor>1.4</restFallFactor>
+        <statOffsets>
+          <MentalBreakThreshold>0.65</MentalBreakThreshold>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.8</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>MMeds_QuelWithdrawalThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>MMeds_QuelAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>quel withdrawal</label>
+        <description>I wish they'd just leave me alone.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

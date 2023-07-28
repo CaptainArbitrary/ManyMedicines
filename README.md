@@ -80,6 +80,14 @@ Lopram is a synthetic antidepressant. When taken daily it significantly improves
 
 Research prerequisite: Lopram Production (requires Drug Production). Synthesized at a drug lab; one neutroamine yields two doses of lopram. One dose gives a +12 boost to a pawn's mood for 24 hours. It also increases the hunger rate and the rest fall rate by 20% each. Repeated use of lopram quickly leads to dependence on the drug. Discontinuation adds a mood malus of -35. It also causes occasional vomiting, increases pain by 30%, increases the pawn's chance of starting social fights by a factor of five, and reduces the pawn's rest fall rate by 40%. Withdrawal lasts about four days but is at no point life-threatening.
 
+#### Quel
+
+<img alt="Quel" src="Common/Textures/Things/Item/Drug/MMeds_Quel/MMeds_Quel_b.png" align="left" width="128">
+
+Quel is a synthetic antipsychotic that drastically reduces the likelihood of mental breaks. Side effects include drowsiness and increased appetite. Quel's beneficial effect lasts for about a day, but it is not recommended for daily use as regular users of the drug develop a tolerance to it that can quickly lead to physical dependence.
+
+Research prerequisite: Quel Production (requires Drug Production). Synthesized at a drug lab from one neutroamine per two doses of quel. A dose of quel reduces a pawn's mental break threshold by 40%, but also reduces consciousness by 10%. It also increases the pawn's rest fall rate by 20% and hunger rate by 40%. Tolerance builds quickly, decreasing the drug's duration of effect sharply. Once addicted, a pawn needs increasingly frequent doses of quel to stave off withdrawal symptoms, which can be severe: pain +10%, hunger +60%, rest need +40%, consciousness ×80% and a dramatic rise in the pawn's mental break threshold. Withdrawal also causes a -12 to mood, making mental breaks that much more likely. However, the dependence on the drug is short-lived, diminishing and finally disappearing over five to 10 days.
+
 #### Coagulase
 
 <img alt="Coagulase" src="Common/Textures/Things/Item/Drug/MMeds_Coagulase.png" align="left" width="128">
