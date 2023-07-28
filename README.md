@@ -12,11 +12,6 @@ Many Medicines is a [mod](https://rimworldwiki.com/wiki/Mods) for the [Ludeon St
 
 This mod is made for Rimworld 1.4. DLCs are supported but not required.
 
-| :exclamation: | Many Medicines is currently under active development. A release to Steam Workshop is planned in the near-ish future, but remember that it'll be ready when it's ready. |
-|-|-|
-
-These are the new medical drugs added by the mod.
-
 ## Neolithic Drugs
 
 These drugs are available from the start of the game with no research required, and can be crafted at either a campfire or a crafting spot with no minimum skills.
