@@ -1,0 +1,22 @@
+{
+  "categories": [
+    {
+      "title": "## New Features",
+      "labels": [ "enhancement" ]
+    },
+    {
+      "title": "## Bug Fixes",
+      "labels": [ "bug" ]
+    },
+    {
+      "title": "## Documentation Changes",
+      "labels": [ "documentation" ]
+    }
+  ],
+  "sort": {
+    "order": "ASC",
+    "on_property": "mergedAt"
+  },
+  "template": "${{CHANGELOG}}",
+  "pr_template": "- **${{TITLE}}** ([pull request ${{NUMBER}}](${{URL}}))\n\n${{BODY}}"
+}
