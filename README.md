@@ -10,7 +10,7 @@
 
 Many Medicines is a mod for the [Ludeon Studios](https://ludeon.com/) game [Rimworld](https://rimworldgame.com/). It adds several new [medical drugs](https://rimworldwiki.com/wiki/Medical_drugs) that players can use to treat acute diseases, manage chronic conditions, or save lives.
 
-This mod is made for Rimworld 1.4. DLCs are not supported but not required.
+This mod is made for Rimworld 1.4. DLCs are supported but not required.
 
 | :exclamation: | Many Medicines is currently under active development. A release to Steam Workshop is planned in the near-ish future, but remember that it'll be ready when it's ready. |
 |-|-|
