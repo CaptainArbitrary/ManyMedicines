@@ -10,8 +10,6 @@
 
 Many Medicines is a [mod](https://rimworldwiki.com/wiki/Mods) for the [Ludeon Studios](https://ludeon.com/) game [Rimworld](https://rimworldgame.com/). It adds several new [medical drugs](https://rimworldwiki.com/wiki/Medical_drugs) that players can use to treat acute diseases, manage chronic conditions, or save lives.
 
-This mod is made for Rimworld 1.4. DLCs are supported but not required.
-
 ## Neolithic Drugs
 
 These drugs are available from the start of the game with no research required, and can be crafted at either a campfire or a crafting spot with no minimum skills.
