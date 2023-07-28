@@ -10,6 +10,8 @@
 
 Many Medicines is a [mod](https://rimworldwiki.com/wiki/Mods) for the [Ludeon Studios](https://ludeon.com/) game [RimWorld](https://rimworldgame.com/). It adds several new [medical drugs](https://rimworldwiki.com/wiki/Medical_drugs) that players can use to treat acute diseases, manage chronic conditions, or save lives.
 
+---
+
 ## Neolithic Drugs
 
 These drugs are available from the start of the game with no research required, and can be crafted at either a campfire or a crafting spot with no minimum skills.
@@ -80,6 +82,8 @@ Research prerequisite: Lopram Production (requires Drug Production). Synthesized
 
 Coagulase is a powerful intravenous coagulant that when administered temporarily stops all bleeding. It can be self-administered, or given to a person who requires aid. Effects last for about two hours. Potentially life-threatening complications include heart attack and ischemic stroke.
 
+---
+
 # FAQ
 
 ### Can I add this mod to a save game?
@@ -97,6 +101,8 @@ No idea. I don't play with [Combat Extended](https://steamcommunity.com/workshop
 ### Can I use this with [some other mod]?
 
 Probably. It's extremely unlikely for there to be any conflict between Many Medicines and any other mod (unless another modder decided to use the abbreviation "MMeds"). I've tested this mod with a rather large mod list and had no problems, so you probably won't either. If you do run into an incompatibility of any kind, though, feel free to [open an issue](https://github.com/CaptainArbitrary/ManyMedicines/issues/new) about it.
+
+---
 
 # Acknowledgments
 
