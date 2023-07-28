@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Biotech</li>
+    </mods>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName = "MMeds_Coagulase"]/costList</xpath>
+      <value>
+        <costList>
+          <Neutroamine>3</Neutroamine>
+          <HemogenPack>1</HemogenPack>
+        </costList>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>
