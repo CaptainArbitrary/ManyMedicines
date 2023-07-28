@@ -67,6 +67,24 @@ Lopram is a synthetic antidepressant. When taken daily it significantly improves
 
 Coagulase is a powerful intravenous coagulant that when administered temporarily stops all bleeding. It can be self-administered, or given to a person who requires aid. Effects last for about two hours. Potentially life-threatening complications include heart attack and ischemic stroke.
 
+# FAQ
+
+### Can I add this mod to a save game?
+
+Yes. No problem.
+
+### Can I remove this mod from a save game?
+
+I wouldn't advise it, as a general rule. If you really want to, start by backing up your saves, then get rid of all the mod-added items in your game and make sure none of your pawns are under the influence of any of this mod's hediffs. Then you can try removing the mod. But I can't promise to help you if this breaks your save. That's what the backup is for.
+
+### CE?
+
+No idea. I don't play with [Combat Extended](https://steamcommunity.com/workshop/filedetails/?id=2890901044). I'd love for somebody to try it out and tell me.
+
+### Can I use this with [some other mod]?
+
+Probably. It's extremely unlikely for there to be any conflict between Many Medicines and any other mod (unless another modder decided to use the abbreviation "MMeds"). I've tested this mod with a rather large mod list and had no problems, so you probably won't either. If you do run into an incompatibility of any kind, though, feel free to [open an issue](https://github.com/CaptainArbitrary/ManyMedicines/issues/new) about it.
+
 # Acknowledgments
 
 Portions of the materials used to create this mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This content/mod is not official and is not endorsed by Ludeon.
