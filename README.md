@@ -1,18 +1,19 @@
 # Many Medicines
 
+[![License](https://img.shields.io/github/license/CaptainArbitrary/ManyMedicines?style=for-the-badge)](LICENSE)
+&emsp;
+[![CI Status](https://img.shields.io/github/actions/workflow/status/CaptainArbitrary/ManyMedicines/ci.yml?style=for-the-badge&label=CI)](https://github.com/CaptainArbitrary/ManyMedicines/actions/workflows/ci.yml)
+&emsp;
+[![Bug Issues](https://img.shields.io/github/issues/CaptainArbitrary/ManyMedicines/bug?style=for-the-badge)](https://github.com/CaptainArbitrary/ManyMedicines/labels/bug)
+&emsp;
+[![Enhancement Issues](https://img.shields.io/github/issues/CaptainArbitrary/ManyMedicines/enhancement?style=for-the-badge)](https://github.com/CaptainArbitrary/ManyMedicines/labels/enhancement)
+
 Many Medicines is a mod for the [Ludeon Studios](https://ludeon.com/) game [Rimworld](https://rimworldgame.com/). It adds several new [medical drugs](https://rimworldwiki.com/wiki/Medical_drugs) that players can use to treat acute diseases, manage chronic conditions, or save lives.
 
 This mod is made for Rimworld 1.4. DLCs are not supported but not required.
 
 | :exclamation: | Many Medicines is currently under active development. A release to Steam Workshop is planned in the near-ish future, but remember that it'll be ready when it's ready. |
 |-|-|
-
-<p align="center">
-<a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/CaptainArbitrary/ManyMedicines?style=for-the-badge"></a>
-<a href="https://github.com/CaptainArbitrary/ManyMedicines/actions"><img alt="Build" src="https://img.shields.io/github/actions/workflow/status/CaptainArbitrary/ManyMedicines/build.yml?style=for-the-badge"></a>
-<a href="https://github.com/CaptainArbitrary/ManyMedicines/commits/"><img alt="Commits" src="https://img.shields.io/github/commit-activity/t/CaptainArbitrary/ManyMedicines?style=for-the-badge"></a>
-<a href="https://github.com/CaptainArbitrary/ManyMedicines/commits/"><img alt="Last Commit" src="https://img.shields.io/github/last-commit/CaptainArbitrary/ManyMedicines?style=for-the-badge"></a>
-</p>
 
 These are the new medicial drugs added by the mod.
 
