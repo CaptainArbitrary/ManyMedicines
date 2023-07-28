@@ -18,6 +18,6 @@ jobs:
       with:
         mode: exactly
         count: 1
-        labels: "bug, enhancement"
+        labels: "bug, chore, enhancement"
         add_comment: true
         message: "This pull request cannot be merged because {{ errorString }} {{ count }} of `{{ provided }}` is required."
