@@ -15,7 +15,7 @@ This mod is made for Rimworld 1.4. DLCs are not supported but not required.
 | :exclamation: | Many Medicines is currently under active development. A release to Steam Workshop is planned in the near-ish future, but remember that it'll be ready when it's ready. |
 |-|-|
 
-These are the new medicial drugs added by the mod.
+These are the new medical drugs added by the mod.
 
 ## Neolithic Drugs
 
