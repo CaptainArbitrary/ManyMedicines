@@ -1,36 +1,31 @@
-name: CI
+name: '[Push] CI'
 
 env:
+  MOD_NAME: 'ManyMedicines'
   SOLUTION_PATH: Source/Assemblies/MMeds/MMeds.sln
+  ZIP_CONTENTS: |
+    1.4/
+    About/
+    Common/
+    LICENSE
+    LoadFolders.xml
+    ModSupport/
 
 on:
   push:
-    branches-ignore:
-      - main
-    paths:
-      - '**.xml'
-      - '**.sln'
-      - '**.csproj'
-      - '**.cs'
-  pull_request:
-    types: [ opened, reopened, synchronize ]
-    branches:
-      - main
-    paths:
-      - '**.xml'
-      - '**.sln'
-      - '**.csproj'
-      - '**.cs'
+    branches-ignore: []
 
 jobs:
 
-  ci:
+  build:
 
     runs-on: ubuntu-latest
 
     steps:
 
     - uses: actions/checkout@v3
+
+    # Do build tasks here ↓
 
     - uses: actions/setup-dotnet@v3
       with:
@@ -49,3 +44,13 @@ jobs:
           **/*.xml
     - run: |
         for i in '${{ steps.glob.outputs.paths }}'; do xmllint --noout $i; done
+
+    # Do build tasks here ↑
+
+    - id: get-short-sha
+      run: echo "short_sha=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: '${{ env.MOD_NAME }}-${{ steps.get-short-sha.outputs.short_sha }}'
+        path: ${{ env.ZIP_CONTENTS }}
