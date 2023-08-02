@@ -2,7 +2,7 @@ name: '[Dispatch] Make Release'
 
 env:
   MOD_NAME: 'ManyMedicines'
-  SOLUTION_PATH: Source/Assemblies/MMeds/MMeds.sln
+  SOLUTION_PATH: Source/Assemblies/
   ZIP_CONTENTS: '1.4 About Common LICENSE LoadFolders.xml ModSupport'
 
 on:
