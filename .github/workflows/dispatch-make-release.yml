@@ -1,57 +1,49 @@
-name: Release
+name: '[Dispatch] Make Release'
 
 env:
-  MOD_NAME: ManyMedicines
+  MOD_NAME: 'ManyMedicines'
   SOLUTION_PATH: Source/Assemblies/MMeds/MMeds.sln
-  FILES_TO_INCLUDE: 1.4 About Common LICENSE LoadFolders.xml
+  ZIP_CONTENTS: '1.4 About Common LICENSE LoadFolders.xml ModSupport'
 
 on:
-  pull_request:
-    types: [ closed ]
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      release_type:
+        description: 'Release type'
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+        - patch
+        - minor
+        - major
 
 jobs:
 
-  bump-version:
+  make-release:
 
     runs-on: ubuntu-latest
-    permissions: write-all
-    outputs:
-      skip: ${{ steps.bumpr.outputs.skip }}
-      current_version: ${{ steps.bumpr.outputs.current_version }}
-      next_version: ${{ steps.bumpr.outputs.next_version }}
-      message: ${{ steps.bumpr.outputs.message }}
 
-    if: github.event.pull_request.merged == true
+    permissions:
+      contents: write
+
     steps:
 
-    - uses: actions/checkout@v3
+    - id: checkout
+      uses: actions/checkout@v3
       with:
         fetch-depth: 0
 
-    - uses: haya14busa/action-bumpr@v1.8.1
-      id: bumpr
+# Build
 
-  build:
-
-    runs-on: ubuntu-latest
-    permissions: write-all
-    needs: bump-version
-
-    if: needs.bump-version.outputs.skip == false
-    steps:
-
-    - uses: actions/checkout@v3
-      with:
-        ref: ${{ needs.bump-version.outputs.next_version }}
-        fetch-depth: 0
+# Do build tasks here ↓
 
     - uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
     - run: dotnet restore ${{ env.SOLUTION_PATH }}
     - run: dotnet build ${{ env.SOLUTION_PATH }} --configuration Release --no-restore
+    - run: dotnet test ${{ env.SOLUTION_PATH }} --no-restore --verbosity normal
 
     - uses: tecolicom/actions-use-apt-tools@v1
       with:
@@ -64,24 +56,33 @@ jobs:
     - run: |
         for i in '${{ steps.glob.outputs.paths }}'; do xmllint --noout $i; done
 
-    - uses: mikepenz/release-changelog-builder-action@v4
-      id: build_changelog
+# Do build tasks here ↑
+
+    - id: increment-version
+      uses: zwaldowski/semver-release-action@v3
+      with:
+        bump: ${{ inputs.release_type }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+
+    - run: |
+        zip -r '${{ env.MOD_NAME }}-${{ steps.increment-version.outputs.version }}.zip' ${{ env.ZIP_CONTENTS }}
+
+# Generate Changelog
+
+    - id: generate-changelog
+      uses: mikepenz/release-changelog-builder-action@v4
       with:
         configuration: ".github/workflows/configuration/release-changelog-builder.json"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - run: |
-        zip -r '${{ env.MOD_NAME }}-${{ needs.bump-version.outputs.next_version }}.zip' ${{ env.FILES_TO_INCLUDE }}
+# Make Release
 
-    - name: Create Release
-      uses: ncipollo/release-action@v1.12.0
+    - uses: ncipollo/release-action@v1.12.0
       with:
         token: ${{ github.token }}
         artifactErrorsFailBuild: true
-        draft: false
+        tag: ${{ steps.increment-version.outputs.version }}
         makeLatest: true
-        body: ${{ steps.build_changelog.outputs.changelog }}
-        artifacts: '${{ env.MOD_NAME }}-${{ needs.bump-version.outputs.next_version }}.zip'
-        artifactContentType: 'application/zip'
-        tag: ${{ needs.bump-version.outputs.next_version }}
+        body: ${{ steps.generate-changelog.outputs.changelog }}
+        artifacts: '${{ env.MOD_NAME }}-${{ steps.increment-version.outputs.version }}.zip'
