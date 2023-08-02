@@ -1,12 +1,16 @@
-name: Require Label on Pull Request
+name: '[PR] Require Label'
+
+env:
+  TYPE_LABELS: 'chore, bug, enhancement, feature'
 
 on:
   pull_request:
     types: [ opened, labeled, unlabeled, synchronize ]
+    branches: [ main ]
 
 jobs:
 
-  require-labels:
+  require-label:
 
     runs-on: ubuntu-latest
     permissions:
@@ -14,10 +18,11 @@ jobs:
 
     steps:
 
-    - uses: mheap/github-action-required-labels@v5
+    - id: get-type-label
+      uses: mheap/github-action-required-labels@v5
       with:
+        labels: ${{ env.TYPE_LABELS }}
         mode: exactly
         count: 1
-        labels: "bug, chore, enhancement"
         add_comment: true
         message: "This pull request cannot be merged because {{ errorString }} {{ count }} of `{{ provided }}` is required."
