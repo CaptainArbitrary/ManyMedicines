@@ -1,0 +1,88 @@
+name: '[Dispatch] Make Release'
+
+env:
+  MOD_NAME: 'ManyMedicines'
+  SOLUTION_PATH: Source/Assemblies/MMeds/MMeds.sln
+  ZIP_CONTENTS: '1.4 About Common LICENSE LoadFolders.xml ModSupport'
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_type:
+        description: 'Release type'
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+        - patch
+        - minor
+        - major
+
+jobs:
+
+  make-release:
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+
+    - id: checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+# Build
+
+# Do build tasks here ↓
+
+    - uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+    - run: dotnet restore ${{ env.SOLUTION_PATH }}
+    - run: dotnet build ${{ env.SOLUTION_PATH }} --configuration Release --no-restore
+    - run: dotnet test ${{ env.SOLUTION_PATH }} --no-restore --verbosity normal
+
+    - uses: tecolicom/actions-use-apt-tools@v1
+      with:
+        tools: libxml2-utils
+    - uses: tj-actions/glob@v17
+      id: glob
+      with:
+        files: |
+          **/*.xml
+    - run: |
+        for i in '${{ steps.glob.outputs.paths }}'; do xmllint --noout $i; done
+
+# Do build tasks here ↑
+
+    - id: increment-version
+      uses: zwaldowski/semver-release-action@v3
+      with:
+        bump: ${{ inputs.release_type }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+
+    - run: |
+        zip -r '${{ env.MOD_NAME }}-${{ steps.increment-version.outputs.version }}.zip' ${{ env.ZIP_CONTENTS }}
+
+# Generate Changelog
+
+    - id: generate-changelog
+      uses: mikepenz/release-changelog-builder-action@v4
+      with:
+        configuration: ".github/workflows/configuration/release-changelog-builder.json"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+# Make Release
+
+    - uses: ncipollo/release-action@v1.12.0
+      with:
+        token: ${{ github.token }}
+        artifactErrorsFailBuild: true
+        tag: ${{ steps.increment-version.outputs.version }}
+        makeLatest: true
+        body: ${{ steps.generate-changelog.outputs.changelog }}
+        artifacts: '${{ env.MOD_NAME }}-${{ steps.increment-version.outputs.version }}.zip'

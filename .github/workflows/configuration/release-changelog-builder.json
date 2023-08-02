@@ -2,6 +2,10 @@
   "categories": [
     {
       "title": "### New Features",
+      "labels": [ "feature" ]
+    },
+    {
+      "title": "### Enhancements",
       "labels": [ "enhancement" ]
     },
     {
@@ -13,6 +17,6 @@
     "order": "ASC",
     "on_property": "mergedAt"
   },
-  "template": "${{CHANGELOG}}\n\n### Full Changelog\n\n- https://github.com/CaptainArbitrary/ManyMedicines/compare/${{FROM_TAG}}...${{TO_TAG}}",
+  "template": "${{CHANGELOG}}\n\n### Full Changelog\n\n- ${{RELEASE_DIFF}}",
   "pr_template": "- **${{TITLE}}** ([PR #${{NUMBER}}](${{URL}}) by @${{AUTHOR}})\n"
 }
