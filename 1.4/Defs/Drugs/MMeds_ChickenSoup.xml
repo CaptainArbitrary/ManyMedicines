@@ -202,43 +202,6 @@
     </comps>
     <stages>
       <li>
-        <minSeverity>0.0</minSeverity>
-        <capMods>
-          <li>
-            <capacity>BloodFiltration</capacity>
-            <offset>0.05</offset>
-          </li>
-        </capMods>
-        <makeImmuneTo>
-          <li>Flu</li>
-        </makeImmuneTo>
-      </li>
-      <li>
-        <minSeverity>0.25</minSeverity>
-        <capMods>
-          <li>
-            <capacity>BloodFiltration</capacity>
-            <offset>0.10</offset>
-          </li>
-        </capMods>
-        <makeImmuneTo>
-          <li>Flu</li>
-        </makeImmuneTo>
-      </li>
-      <li>
-        <minSeverity>0.50</minSeverity>
-        <capMods>
-          <li>
-            <capacity>BloodFiltration</capacity>
-            <offset>0.15</offset>
-          </li>
-        </capMods>
-        <makeImmuneTo>
-          <li>Flu</li>
-        </makeImmuneTo>
-      </li>
-      <li>
-        <minSeverity>0.75</minSeverity>
         <capMods>
           <li>
             <capacity>BloodFiltration</capacity>
