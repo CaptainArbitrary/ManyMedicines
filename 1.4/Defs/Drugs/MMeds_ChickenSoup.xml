@@ -208,9 +208,6 @@
             <offset>0.20</offset>
           </li>
         </capMods>
-        <makeImmuneTo>
-          <li>Flu</li>
-        </makeImmuneTo>
       </li>
     </stages>
   </HediffDef>
