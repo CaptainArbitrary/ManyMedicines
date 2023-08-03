@@ -10,7 +10,7 @@
       <texPath>Things/Item/Drug/MMeds_ChickenSoup</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <socialPropernessMatters>false</socialPropernessMatters>
+    <socialPropernessMatters>true</socialPropernessMatters>
     <tickerType>Rare</tickerType>
     <statBases>
       <WorkToMake>600</WorkToMake>
@@ -23,7 +23,7 @@
       <drugCategory>Medical</drugCategory>
       <foodType>Meal</foodType>
       <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-      <preferability>NeverForNutrition</preferability>
+      <preferability>MealSimple</preferability>
       <ingestSound>Ingest_Drink</ingestSound>
       <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
       <outcomeDoers>
