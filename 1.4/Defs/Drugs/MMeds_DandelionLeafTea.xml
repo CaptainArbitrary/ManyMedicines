@@ -33,7 +33,11 @@
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>MMeds_DandelionLeafTeaHigh</hediffDef>
-          <severity>0.25</severity>
+          <severity>1.0</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MMeds_DandelionLeafTeaOverdose</hediffDef>
+          <severity>0.2</severity>
         </li>
       </outcomeDoers>
     </ingestible>
@@ -59,14 +63,14 @@
   <HediffDef>
     <defName>MMeds_DandelionLeafTeaHigh</defName>
     <hediffClass>Hediff_High</hediffClass>
-    <label>dandelion leaf tea</label>
-    <description>This tea made from medicinal herbs and dandelion leaves settles the stomach, stimulates the appetite and helps detoxify the liver and kidneys.</description>
+    <label>on dandelion leaf tea</label>
+    <description>Dandelion leaf tea is settling the stomach, stimulating the appetite and helping to detoxify the liver and kidneys. The effects will last for about a day.</description>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-1.0</severityPerDay>
+        <severityPerDay>-1.05</severityPerDay>
         <showHoursToRecover>true</showHoursToRecover>
       </li>
       <li Class="MMeds.HediffCompProperties_TreatToxicBuildup">
@@ -75,61 +79,37 @@
     </comps>
     <stages>
       <li>
-        <minSeverity>0.0</minSeverity>
-        <label>wearing off</label>
-        <hungerRateFactorOffset>0.1</hungerRateFactorOffset>
-      </li>
-      <li>
-        <minSeverity>0.1</minSeverity>
         <hungerRateFactorOffset>0.3</hungerRateFactorOffset>
         <vomitMtbDays>-1.0</vomitMtbDays>
-      </li>
-      <li>
-        <minSeverity>0.5</minSeverity>
-        <label>intoxicated</label>
-        <vomitMtbDays>0.7</vomitMtbDays>
-        <painOffset>0.3</painOffset>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <postFactor>0.7</postFactor>
-          </li>
-        </capMods>
-      </li>
-      <li>
-        <minSeverity>0.7</minSeverity>
-        <hediffGivers>
-          <li Class="HediffGiver_Refresh">
-            <hediff>MMeds_DandelionLeafTeaOverdose</hediff>
-          </li>
-          <li Class="HediffGiver_AddSeverity">
-            <hediff>MMeds_DandelionLeafTeaHigh</hediff>
-            <severityAmount>-1.0</severityAmount>
-            <mtbHours>0</mtbHours>
-          </li>
-        </hediffGivers>
       </li>
     </stages>
   </HediffDef>
 
   <HediffDef>
     <defName>MMeds_DandelionLeafTeaOverdose</defName>
-    <hediffClass>HediffWithComps</hediffClass>
     <label>dandelion leaf tea overdose</label>
-    <description>This person has drunk too much dandelion leaf tea. He or she will experience pain and nausea, and may suffer permanent kidney damage. The danger should pass in about a day.</description>
+    <labelNoun>a dandelion leaf tea overdose</labelNoun>
+    <description>Generalized toxic effects due to over-consumption of dandelion leaf tea. Symptoms include pain, nausea and mild stupor lasting about 24 hours. Severe overdose may cause permanent damage to one or both kidneys.</description>
+    <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-    <initialSeverity>1.0</initialSeverity>
-    <maxSeverity>1.0</maxSeverity>
-    <isBad>true</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.98</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
+        <severityPerDay>-1</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Discoverable">
+        <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+        <discoverLetterLabel>Overdose: {0}</discoverLetterLabel>
+        <discoverLetterText>{0} has overdosed on dandelion leaf tea.</discoverLetterText>
       </li>
     </comps>
     <stages>
       <li>
-        <minSeverity>0.0</minSeverity>
+        <label>minor</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <label>minor</label>
+        <minSeverity>0.50</minSeverity>
         <vomitMtbDays>0.125</vomitMtbDays>
         <painOffset>0.1</painOffset>
         <capMods>
@@ -140,17 +120,7 @@
         </capMods>
       </li>
       <li>
-        <minSeverity>0.50</minSeverity>
-        <vomitMtbDays>0.125</vomitMtbDays>
-        <painOffset>0.25</painOffset>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <postFactor>0.75</postFactor>
-          </li>
-        </capMods>
-      </li>
-      <li>
+        <label>major</label>
         <minSeverity>0.75</minSeverity>
         <vomitMtbDays>0.04</vomitMtbDays>
         <painOffset>0.5</painOffset>

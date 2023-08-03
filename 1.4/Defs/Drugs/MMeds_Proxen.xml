@@ -79,7 +79,7 @@
     <defName>MMeds_ProxenOverdose</defName>
     <label>proxen overdose</label>
     <labelNoun>a proxen overdose</labelNoun>
-    <description>Generalized toxic effects due to over-concentration of proxen in the bloodstream.</description>
+    <description>Generalized toxic effects due to over-concentration of proxen in the bloodstream. Symptoms include nausea and stupor. Severe overdoses may cause permanent liver damage.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <comps>
@@ -119,7 +119,7 @@
         </capMods>
         <hediffGivers>
           <li Class="HediffGiver_Random">
-            <hediff>ChemicalDamageModerate</hediff>
+            <hediff>MMeds_ChemicalDamageMinor</hediff>
             <mtbDays>2.5</mtbDays>
             <partsToAffect>
               <li>Liver</li>
