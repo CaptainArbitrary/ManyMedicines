@@ -61,8 +61,8 @@
   <HediffDef>
     <defName>MMeds_DaylilyRootTeaHigh</defName>
     <hediffClass>Hediff_High</hediffClass>
-    <label>daylily root tea</label>
-    <description>This tea made from daylily roots has antiemetic properties.</description>
+    <label>on daylily root tea</label>
+    <description>Daylily root tea has antiemetic properties. Its effects last about 12 hours.</description>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
