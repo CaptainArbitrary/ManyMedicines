@@ -4,7 +4,7 @@
   <ThingDef ParentName="MakeableDrugPillBase">
     <defName>MMeds_Proxen</defName>
     <label>proxen</label>
-    <description>A mild analgesic. Non-additive and non-tolerance-forming, but only really useful for providing partial relief from pain. Take every 4 to 6 hours for best results.</description>
+    <description>A mild analgesic. Non-additive and non-tolerance-forming, but provides only partial relief from pain. Take every 6 hours for best results. Avoid taking more than 4 doses in a 24-hour period.</description>
     <descriptionHyperlinks>
       <HediffDef>MMeds_ProxenHigh</HediffDef>
       <HediffDef>MMeds_ProxenOverdose</HediffDef>
@@ -29,6 +29,10 @@
           <hediffDef>MMeds_ProxenHigh</hediffDef>
           <severity>0.4</severity>
         </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MMeds_ProxenOverdose</hediffDef>
+          <severity>0.2</severity>
+        </li>
       </outcomeDoers>
     </ingestible>
     <costList>
@@ -44,6 +48,8 @@
     </recipeMaker>
     <comps>
       <li Class="CompProperties_Drug">
+        <addictiveness>0</addictiveness>
+        <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
       </li>
     </comps>
   </ThingDef>
@@ -51,8 +57,8 @@
   <HediffDef>
     <defName>MMeds_ProxenHigh</defName>
     <hediffClass>Hediff_High</hediffClass>
-    <label>proxen</label>
-    <description>Proxen provides partial relief from pain. Effects last for about six hours, gradually tapering off as the drug is metabolized.</description>
+    <label>on proxen</label>
+    <description>Proxen provides partial relief from pain. Effects last for about 6 hours.</description>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <maxSeverity>1.0</maxSeverity>
     <isBad>false</isBad>
@@ -64,94 +70,64 @@
     </comps>
     <stages>
       <li>
-        <minSeverity>0.05</minSeverity>
-        <painFactor>0.90</painFactor>
-      </li>
-      <li>
-        <minSeverity>0.10</minSeverity>
-        <painFactor>0.80</painFactor>
-      </li>
-      <li>
-        <minSeverity>0.15</minSeverity>
-        <painFactor>0.7</painFactor>
-      </li>
-      <li>
-        <minSeverity>0.20</minSeverity>
-        <painFactor>0.6</painFactor>
-      </li>
-      <li>
-        <minSeverity>0.25</minSeverity>
         <painFactor>0.5</painFactor>
-      </li>
-      <li>
-        <minSeverity>0.9</minSeverity>
-        <hediffGivers>
-          <li Class="HediffGiver_Refresh">
-            <hediff>MMeds_ProxenOverdose</hediff>
-          </li>
-          <li Class="HediffGiver_AddSeverity">
-            <hediff>MMeds_ProxenHigh</hediff>
-            <severityAmount>-1.0</severityAmount>
-            <mtbHours>0</mtbHours>
-          </li>
-        </hediffGivers>
       </li>
     </stages>
   </HediffDef>
 
   <HediffDef>
     <defName>MMeds_ProxenOverdose</defName>
-    <hediffClass>HediffWithComps</hediffClass>
     <label>proxen overdose</label>
-    <description>This person has taken a potentially life-threatening amount of proxen. The first effects will be pain and vomiting, followed by stupor that gradually improves over the next one to two days.</description>
+    <labelNoun>a proxen overdose</labelNoun>
+    <description>Generalized toxic effects due to over-concentration of proxen in the bloodstream.</description>
+    <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-    <initialSeverity>1.0</initialSeverity>
-    <maxSeverity>1.0</maxSeverity>
-    <isBad>true</isBad>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.5</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
+        <severityPerDay>-1</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_Discoverable">
+        <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+        <discoverLetterLabel>Overdose: {0}</discoverLetterLabel>
+        <discoverLetterText>{0} is overdosing!</discoverLetterText>
       </li>
     </comps>
     <stages>
       <li>
-        <minSeverity>0.0</minSeverity>
-        <painOffset>0.1</painOffset>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <postFactor>0.6</postFactor>
-          </li>
-        </capMods>
+        <label>minor</label>
+        <becomeVisible>false</becomeVisible>
       </li>
       <li>
-        <minSeverity>0.25</minSeverity>
-        <painOffset>0.5</painOffset>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <postFactor>0.35</postFactor>
-          </li>
-        </capMods>
-      </li>
-      <li>
+        <label>minor</label>
         <minSeverity>0.50</minSeverity>
-        <painOffset>0.8</painOffset>
+        <vomitMtbDays>0.30</vomitMtbDays>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <postFactor>0.2</postFactor>
+            <setMax>0.5</setMax>
           </li>
         </capMods>
       </li>
       <li>
-        <minSeverity>0.98</minSeverity>
-        <vomitMtbDays>0.03</vomitMtbDays>
-        <painOffset>0.3</painOffset>
+        <label>major</label>
+        <minSeverity>0.75</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>ChemicalDamageModerate</hediff>
+            <mtbDays>2.5</mtbDays>
+            <partsToAffect>
+              <li>Liver</li>
+            </partsToAffect>
+          </li>
+        </hediffGivers>
       </li>
     </stages>
   </HediffDef>
-
 
 </Defs>
