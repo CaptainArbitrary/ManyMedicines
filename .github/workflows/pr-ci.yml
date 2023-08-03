@@ -1,0 +1,58 @@
+name: '[PR] CI'
+
+env:
+  MOD_NAME: 'ManyMedicines'
+  SOLUTION_PATH: Source/Assemblies/
+  ZIP_CONTENTS: |
+    1.4/
+    About/
+    Common/
+    LICENSE
+    LoadFolders.xml
+    Mods/
+
+on:
+  pull_request:
+    types: [ closed ]
+    branches: [ main ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    if: github.event.pull_request.merged == true
+    steps:
+
+    - uses: actions/checkout@v3
+
+    # Do build tasks here ↓
+
+    - uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+    - run: dotnet restore ${{ env.SOLUTION_PATH }}
+    - run: dotnet build ${{ env.SOLUTION_PATH }} --configuration Debug --no-restore
+    - run: dotnet test ${{ env.SOLUTION_PATH }} --no-restore --verbosity normal
+
+    - uses: tecolicom/actions-use-apt-tools@v1
+      with:
+        tools: libxml2-utils
+    - uses: tj-actions/glob@v17
+      id: glob
+      with:
+        files: |
+          **/*.xml
+    - run: |
+        for i in '${{ steps.glob.outputs.paths }}'; do xmllint --noout $i; done
+
+    # Do build tasks here ↑
+
+    - id: get-short-sha
+      run: echo "short_sha=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: '${{ env.MOD_NAME }}-${{ steps.get-short-sha.outputs.short_sha }}'
+        path: ${{ env.ZIP_CONTENTS }}
