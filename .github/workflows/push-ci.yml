@@ -9,7 +9,7 @@ env:
     Common/
     LICENSE
     LoadFolders.xml
-    ModSupport/
+    Mods/
 
 on:
   push:
