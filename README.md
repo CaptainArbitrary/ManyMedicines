@@ -99,11 +99,13 @@ These drugs are available from the start of the game with no research required, 
 
 #### Daylily Root Tea
 
-<img alt="Daylily Root Tea" src="Common/Textures/Things/Item/Drug/MMeds_DaylilyRootTea.png" align="left" width="64">
-
-Tea made from daylily roots has antiemetic properties and can provide some relief from food poisoning, gut worms and other gastrointestinal maladies. Over-consumption causes severe rebound nausea.
-
 <table>
+  <tr>
+    <td align="center">
+      <img alt="Daylily Root Tea" src="Common/Textures/Things/Item/Drug/MMeds_DaylilyRootTea.png" width="128">
+    </td>
+    <td>Tea made from daylily roots has antiemetic properties and can provide some relief from food poisoning, gut worms and other gastrointestinal maladies. Over-consumption causes severe rebound nausea.</td>
+  </tr>
   <tr>
     <th>Tech Level</th>
     <td>neolithic</td>
