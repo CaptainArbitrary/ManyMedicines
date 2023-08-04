@@ -14,7 +14,7 @@ Many Medicines is a [mod](https://rimworldwiki.com/wiki/Mods) for the [Ludeon St
 
 ## New Drugs
 
-Many Medicines adds several new [medical drugs](https://rimworldwiki.com/wiki/Medical_drugs). Some are treatments for acute conditions like disease, infection or trauma; others are best used for the ongoing management of chronic conditions or personality problems. There are neolithic drugs that are available at (or close to, depending on one's mods) the start of a new game, and there are industrial drugs that have research requirements and that are more expensive to produce.
+Many Medicines adds a number of new [medical drugs](https://rimworldwiki.com/wiki/Medical_drugs). Some are treatments for acute conditions like disease, infection or trauma; others are best used for the ongoing management of chronic conditions or personality problems. There are neolithic drugs that are available at (or close to, depending on one's mods) the start of a new game, and there are industrial drugs that have research requirements and that are more expensive to produce. Beyond that lie the spacer drugs, remarkably expensive to manufacture but potentially life-changing.
 
 ### Neolithic Drugs
 
@@ -339,6 +339,10 @@ These drugs are more difficult and expensive to manufacture, but they're much mo
   </tr>
 </table>
 
+### Spacer Drugs
+
+These drugs require still more research and more resources to manufacture, but their effects are remarkable.
+
 #### Coagulase
 
 <table>
@@ -350,7 +354,7 @@ These drugs are more difficult and expensive to manufacture, but they're much mo
   </tr>
   <tr>
     <th>Tech Level</th>
-    <td>industrial</td>
+    <td>spacer</td>
   </tr>
   <tr>
     <th>Research</th>
@@ -362,7 +366,7 @@ These drugs are more difficult and expensive to manufacture, but they're much mo
   </tr>
   <tr>
     <th>Ingredients</th>
-    <td>4 neutroamine, 1 industrial medicine, , Biotech:, 3 neutroamine, 1 hemogen pack</td>
+    <td>Without Biotech: 4 neutroamine, 1 industrial medicine<br />With Biotech: 3 neutroamine, 1 hemogen pack</td>
   </tr>
   <tr>
     <th>Yield</th>
