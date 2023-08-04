@@ -12,7 +12,7 @@
     </descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Item/Drug/MMeds_Coagulase</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>
