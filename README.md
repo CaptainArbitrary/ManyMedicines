@@ -65,8 +65,7 @@ These drugs are available from the start of the game with no research required, 
     <td align="center">
       <img alt="Rose Petal Tea" src="Common/Textures/Things/Item/Drug/MMeds_RosePetalTea.png" width="128">
     </td>
-    <td>This tea made from rose petals and medicinal herbs relieves stress, promotes good circulation and speeds healing. Its effects are quite mild, but it's free from harmful side effects so it can be consumed frequently without risk of damage or dependence.
-</td>
+    <td>This tea made from rose petals and medicinal herbs relieves stress, promotes good circulation and speeds healing. Its effects are quite mild, but it's free from harmful side effects so it can be consumed frequently without risk of damage or dependence.</td>
   </tr>
   <tr>
     <th>Tech Level</th>
