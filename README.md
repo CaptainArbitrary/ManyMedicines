@@ -30,7 +30,7 @@ These drugs are available from the start of the game with no research required, 
     <td>This simple broth of meat, vegetables and medicinal herbs makes one feel better when one is sick. It starts spoiling almost immediately, though, so it's best consumed while it's very fresh. For reasons lost to history, this broth is universally called "chicken soup" even though it can be made from almost any ingredients.</td>
   </tr>
     <th>Tech Level</th>
-    <td>neolithic</td>
+    <td>Neolithic</td>
   </tr>
   <tr>
     <th>Research</th>
@@ -69,7 +69,7 @@ These drugs are available from the start of the game with no research required, 
   </tr>
   <tr>
     <th>Tech Level</th>
-    <td>neolithic</td>
+    <td>Neolithic</td>
   </tr>
   <tr>
     <th>Research</th>
@@ -108,7 +108,7 @@ These drugs are available from the start of the game with no research required, 
   </tr>
   <tr>
     <th>Tech Level</th>
-    <td>neolithic</td>
+    <td>Neolithic</td>
   </tr>
   <tr>
     <th>Research</th>
@@ -147,7 +147,7 @@ These drugs are available from the start of the game with no research required, 
   </tr>
   <tr>
     <th>Tech Level</th>
-    <td>neolithic</td>
+    <td>Neolithic</td>
   </tr>
   <tr>
     <th>Research</th>
@@ -190,7 +190,7 @@ These drugs are more difficult and expensive to manufacture, but they're much mo
   </tr>
   <tr>
     <th>Tech Level</th>
-    <td>industrial</td>
+    <td>Industrial</td>
   </tr>
   <tr>
     <th>Research</th>
@@ -233,7 +233,7 @@ These drugs are more difficult and expensive to manufacture, but they're much mo
   </tr>
   <tr>
     <th>Tech Level</th>
-    <td>industrial</td>
+    <td>Industrial</td>
   </tr>
   <tr>
     <th>Research</th>
@@ -272,7 +272,7 @@ These drugs are more difficult and expensive to manufacture, but they're much mo
   </tr>
   <tr>
     <th>Tech Level</th>
-    <td>industrial</td>
+    <td>Industrial</td>
   </tr>
   <tr>
     <th>Research</th>
@@ -311,7 +311,7 @@ These drugs are more difficult and expensive to manufacture, but they're much mo
   </tr>
   <tr>
     <th>Tech Level</th>
-    <td>industrial</td>
+    <td>Industrial</td>
   </tr>
   <tr>
     <th>Research</th>
@@ -354,7 +354,7 @@ These drugs require still more research and more resources to manufacture, but t
   </tr>
   <tr>
     <th>Tech Level</th>
-    <td>spacer</td>
+    <td>Spacer</td>
   </tr>
   <tr>
     <th>Research</th>
