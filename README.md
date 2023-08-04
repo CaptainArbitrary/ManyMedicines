@@ -24,12 +24,11 @@ These drugs are available from the start of the game with no research required, 
 
 <table align="left">
   <tr>
-    <td colspan="2">
-      <div style="text-align: center">
-        <img alt="Chicken Soup" src="Common/Textures/Things/Item/Drug/MMeds_ChickenSoup/MMeds_ChickenSoup_a.png" width="96">
-      </div>
+    <td align="center">
+      <img alt="Chicken Soup" src="Common/Textures/Things/Item/Drug/MMeds_ChickenSoup/MMeds_ChickenSoup_a.png" width="128">
     </td>
-  <tr>
+    <td>This simple broth of meat, vegetables and medicinal herbs makes one feel better when one is sick. It starts spoiling almost immediately, though, so it's best consumed while it's very fresh. For reasons lost to history, this broth is universally called "chicken soup" even though it can be made from almost any ingredients.</td>
+  </tr>
     <th>Tech Level</th>
     <td>neolithic</td>
   </tr>
