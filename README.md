@@ -40,9 +40,9 @@ The ingredients are 10 rose petals and one herbal medicine; can be brewed over a
 
 <img alt="Daylily Root Tea" src="Common/Textures/Things/Item/Drug/MMeds_DaylilyRootTea.png" align="left" width="128">
 
-Tea made from daylily roots has antiemetic properties and can provide some relief from food poisoning, gut worms and other gastrointestinal maladies.
+Tea made from daylily roots has antiemetic properties and can provide some relief from food poisoning, gut worms and other gastrointestinal maladies. Over-consumption causes severe rebound nausea.
 
-This tea can be brewed over a campfire or at a stove from three daylily roots. It prevents vomiting for about nine hours.
+This tea can be brewed over a campfire or at a stove from three daylily roots. It prevents vomiting for about twelve hours.
 
 #### Dandelion Leaf Tea
 
