@@ -22,7 +22,7 @@ These drugs are available from the start of the game with no research required, 
 
 #### Chicken Soup
 
-<img alt="Chicken Soup" src="Common/Textures/Things/Item/Drug/MMeds_ChickenSoup/MMeds_ChickenSoup_a.png" align="left" width="96">
+<img alt="Chicken Soup" src="Common/Textures/Things/Item/Drug/MMeds_ChickenSoup/MMeds_ChickenSoup_a.png" align="left" width="64">
 
 This simple broth of meat, vegetables and medicinal herbs makes one feel better when one is sick. It starts spoiling almost immediately, though, so it's best consumed while it's very fresh. For reasons lost to history, this broth is universally called "chicken soup" even though it can be made from almost any ingredients.
 
@@ -59,7 +59,7 @@ This simple broth of meat, vegetables and medicinal herbs makes one feel better 
 
 #### Rose Petal Tea
 
-<img alt="Rose Petal Tea" src="Common/Textures/Things/Item/Drug/MMeds_RosePetalTea.png" align="left" width="128">
+<img alt="Rose Petal Tea" src="Common/Textures/Things/Item/Drug/MMeds_RosePetalTea.png" align="left" width="64">
 
 This tea made from rose petals and medicinal herbs relieves stress, promotes good circulation and speeds healing. Its effects are quite mild, but it's free from harmful side effects so it can be consumed frequently without risk of damage or dependence.
 
@@ -67,7 +67,7 @@ The ingredients are 10 rose petals and one herbal medicine; can be brewed over a
 
 #### Daylily Root Tea
 
-<img alt="Daylily Root Tea" src="Common/Textures/Things/Item/Drug/MMeds_DaylilyRootTea.png" align="left" width="128">
+<img alt="Daylily Root Tea" src="Common/Textures/Things/Item/Drug/MMeds_DaylilyRootTea.png" align="left" width="64">
 
 Tea made from daylily roots has antiemetic properties and can provide some relief from food poisoning, gut worms and other gastrointestinal maladies. Over-consumption causes severe rebound nausea.
 
@@ -75,7 +75,7 @@ This tea can be brewed over a campfire or at a stove from three daylily roots. I
 
 #### Dandelion Leaf Tea
 
-<img alt="Dandelion Leaf Tea" src="Common/Textures/Things/Item/Drug/MMeds_DandelionLeafTea.png" align="left" width="128">
+<img alt="Dandelion Leaf Tea" src="Common/Textures/Things/Item/Drug/MMeds_DandelionLeafTea.png" align="left" width="64">
 
 This tea made from medicinal herbs and dandelion leaves helps to detoxify the body, as well as stimulating the appetite and settling the stomach. Drinking too much can cause grogginess and nausea, and has a chance of permanently damaging the kidneys. Take no more often than every six hours.
 
@@ -87,7 +87,7 @@ These drugs have their own research projects, all of which have Drug Production 
 
 #### Proxen
 
-<img alt="Proxen" src="Common/Textures/Things/Item/Drug/MMeds_Proxen/MMeds_Proxen_b.png" align="left" width="128">
+<img alt="Proxen" src="Common/Textures/Things/Item/Drug/MMeds_Proxen/MMeds_Proxen_b.png" align="left" width="64">
 
 Proxen is a mild analgesic. Non-addictive and non-tolerance-forming, but only really useful for providing partial relief from pain. Effects peak about one hour after administration, then gradually taper off over the next 11 hours. Take two to three times a day for best results.
 
@@ -95,7 +95,7 @@ Research prerequisite: Proxen Production (requires Drug Production). This drug i
 
 #### Mycin
 
-<img alt="Mycin" src="Common/Textures/Things/Item/Drug/MMeds_Mycin/MMeds_Mycin_b.png" align="left" width="128">
+<img alt="Mycin" src="Common/Textures/Things/Item/Drug/MMeds_Mycin/MMeds_Mycin_b.png" align="left" width="64">
 
 Mycin is a synthetic broad-spectrum antimicrobial that boosts the body's natural immune response to bacterial, viral, parasitic and fungal infections. Can be administered responsively to treat infections, or prophylactically to prevent infections. Take daily for best results.
 
@@ -103,7 +103,7 @@ Research prerequisite: Mycin Production (requires Drug Production). Synthesized 
 
 #### Lopram
 
-<img alt="Lopram" src="Common/Textures/Things/Item/Drug/MMeds_Lopram/MMeds_Lopram_b.png"  align="left" width="128">
+<img alt="Lopram" src="Common/Textures/Things/Item/Drug/MMeds_Lopram/MMeds_Lopram_b.png"  align="left" width="64">
 
 Lopram is a synthetic antidepressant. When taken daily it significantly improves mood, but developing a dependence on the drug is extremely likely. Withdrawal symptoms include aches and pains, nausea, irritability, sleeplessness and depression lasting three to four days after the last dose taken. It is best to start a course of treatment with lopram only when a steady supply of the drug can be guaranteed.
 
@@ -111,7 +111,7 @@ Research prerequisite: Lopram Production (requires Drug Production). Synthesized
 
 #### Quel
 
-<img alt="Quel" src="Common/Textures/Things/Item/Drug/MMeds_Quel/MMeds_Quel_b.png" align="left" width="128">
+<img alt="Quel" src="Common/Textures/Things/Item/Drug/MMeds_Quel/MMeds_Quel_b.png" align="left" width="64">
 
 Quel is a synthetic antipsychotic that drastically reduces the likelihood of mental breaks. Side effects include drowsiness and increased appetite. Quel's beneficial effect lasts for about a day, but it is not recommended for daily use as regular users of the drug develop a tolerance to it that can quickly lead to physical dependence.
 
@@ -119,7 +119,7 @@ Research prerequisite: Quel Production (requires Drug Production). Synthesized a
 
 #### Coagulase
 
-<img alt="Coagulase" src="Common/Textures/Things/Item/Drug/MMeds_Coagulase/MMeds_Coagulase_a.png" align="left" width="128">
+<img alt="Coagulase" src="Common/Textures/Things/Item/Drug/MMeds_Coagulase/MMeds_Coagulase_a.png" align="left" width="64">
 
 Coagulase is a powerful intravenous coagulant that when administered temporarily stops all bleeding. It can be self-administered, or given to a person who requires aid. Unfortunately clots have a tendency to form in places like the coronary arteries and the arteries of the brain, so the risks of life-threatening complication are significant. Coagulase should only be used in medical emergencies.
 
