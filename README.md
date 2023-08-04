@@ -100,7 +100,36 @@ This tea made from rose petals and medicinal herbs relieves stress, promotes goo
 
 Tea made from daylily roots has antiemetic properties and can provide some relief from food poisoning, gut worms and other gastrointestinal maladies. Over-consumption causes severe rebound nausea.
 
-This tea can be brewed over a campfire or at a stove from three daylily roots. It prevents vomiting for about twelve hours.
+<table>
+  <tr>
+    <th>Tech Level</th>
+    <td>neolithic</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>—</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>campfire or stove</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>3 daylily roots</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>1 daylily root tea</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>prevents vomiting</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 12 hours</td>
+  </tr>
+</table>
 
 #### Dandelion Leaf Tea
 
