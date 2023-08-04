@@ -224,11 +224,42 @@ These drugs have their own research projects, all of which have Drug Production 
 
 #### Mycin
 
-<img alt="Mycin" src="Common/Textures/Things/Item/Drug/MMeds_Mycin/MMeds_Mycin_b.png" align="left" width="64">
-
-Mycin is a synthetic broad-spectrum antimicrobial that boosts the body's natural immune response to bacterial, viral, parasitic and fungal infections. Can be administered responsively to treat infections, or prophylactically to prevent infections. Take daily for best results.
-
-Research prerequisite: Mycin Production (requires Drug Production). Synthesized at a drug lab from one neutroamine and two herbal medicine, yielding three doses. Speeds immunity gain by 24% for about a day; also prevents wound infections, so mycin can be given prophylactically to wounded pawns if desired.
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Mycin" src="Common/Textures/Things/Item/Drug/MMeds_Mycin/MMeds_Mycin_b.png" width="128">
+    </td>
+    <td>Mycin is a synthetic broad-spectrum antimicrobial that boosts the body's natural immune response to bacterial, viral, parasitic and fungal infections. Can be administered responsively to treat infections, or prophylactically to prevent infections. Take daily for best results.</td>
+  </tr>
+  <tr>
+    <th>Tech Level</th>
+    <td>industrial</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>Drug Production → Mycin Production</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>drug lab</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>1 neutroamine, 2 herbal medicine</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>3 mycin</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>immunity gain speed +24%, prevents wound infections</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 24 hours</td>
+  </tr>
+</table>
 
 #### Lopram
 
