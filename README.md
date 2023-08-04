@@ -14,7 +14,7 @@ Many Medicines is a [mod](https://rimworldwiki.com/wiki/Mods) for the [Ludeon St
 
 ## New Drugs
 
-Many Medicines adds several new [medical drugs](https://rimworldwiki.com/wiki/Medical_drugs). Some are treatments for acute conditions like disease, infection or trauma; others are best used for the ongoing management of chronic conditions or personality problems. There are neolithic drugs that are available at (or close to, depending on one's mods) the start of a new game, and there are industrial drugs that have research requirements and that are more expensive to produce.
+Many Medicines adds a number of new medical drugs. Some are treatments for acute conditions like disease, infection or trauma; others are best used for the ongoing management of chronic conditions or personality problems. There are [neolithic drugs](#neolithic-drugs) that are available at (or close to, depending on one's mods) the start of a new game, and there are [industrial drugs](#industrial-drugs) that have research requirements and that are more expensive to produce. Beyond that lie the [spacer drugs](#spacer-drugs), remarkably expensive to manufacture but potentially life-changing.
 
 ### Neolithic Drugs
 
@@ -22,79 +22,369 @@ These drugs are available from the start of the game with no research required, 
 
 #### Chicken Soup
 
-<img alt="Chicken Soup" src="Common/Textures/Things/Item/Drug/MMeds_ChickenSoup/MMeds_ChickenSoup_a.png" align="left" width="128">
-
-This simple broth of meat, vegetables and medicinal herbs makes one feel better when one is sick. It starts spoiling almost immediately, though, so best consume it while it's very fresh. For reasons lost to history, this broth is universally called "chicken soup" even though it can be made from almost any ingredients.
-
-The ingredients are five of any raw meat, five of any raw plant food and one herbal medicine; can be cooked over a campfire or at a stove. Increases blood filtration by a maximum of 20% and makes the pawn immune to the flu. Effects gradually taper off over about a day.
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Chicken Soup" src="Common/Textures/Things/Item/Drug/MMeds_ChickenSoup/MMeds_ChickenSoup_a.png" width="128">
+    </td>
+    <td>This simple broth of meat, vegetables and medicinal herbs makes one feel better when one is sick. It starts spoiling almost immediately, though, so it's best consumed while it's very fresh. For reasons lost to history, this broth is universally called "chicken soup" even though it can be made from almost any ingredients.</td>
+  </tr>
+    <th>Tech Level</th>
+    <td>Neolithic</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>—</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>campfire or stove</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>5 raw meat, 5 raw plant food, 1 herbal medicine</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>1 chicken soup</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>blood filtration +20%</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 24 hours</td>
+  </tr>
+</table>
 
 #### Rose Petal Tea
 
-<img alt="Rose Petal Tea" src="Common/Textures/Things/Item/Drug/MMeds_RosePetalTea.png" align="left" width="128">
-
-This tea made from rose petals and medicinal herbs relieves stress, promotes good circulation and speeds healing. Its effects are quite mild, but it's free from harmful side effects so it can be consumed frequently without risk of damage or dependence.
-
-The ingredients are 10 rose petals and one herbal medicine; can be brewed over a campfire or at a stove. At peak effect, it reduces the pawn's mental break threshold by a maximum of 0.2, increases blood pumping by 6%, and improves injury healing by 8%. Effects gradually taper off over about a day.
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Rose Petal Tea" src="Common/Textures/Things/Item/Drug/MMeds_RosePetalTea.png" width="128">
+    </td>
+    <td>This tea made from rose petals and medicinal herbs relieves stress, promotes good circulation and speeds healing. Its effects are quite mild, but it's free from harmful side effects so it can be consumed frequently without risk of damage or dependence.</td>
+  </tr>
+  <tr>
+    <th>Tech Level</th>
+    <td>Neolithic</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>—</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>campfire or stove</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>10 rose petals, 1 herbal medicine</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>1 rose petal tea</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>mental break threshold −20%, blood pumping +6%, injury healing factor +8%</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 18 hours</td>
+  </tr>
+</table>
 
 #### Daylily Root Tea
 
-<img alt="Daylily Root Tea" src="Common/Textures/Things/Item/Drug/MMeds_DaylilyRootTea.png" align="left" width="128">
-
-Tea made from daylily roots has antiemetic properties and can provide some relief from food poisoning, gut worms and other gastrointestinal maladies. Over-consumption causes severe rebound nausea.
-
-This tea can be brewed over a campfire or at a stove from three daylily roots. It prevents vomiting for about twelve hours.
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Daylily Root Tea" src="Common/Textures/Things/Item/Drug/MMeds_DaylilyRootTea.png" width="128">
+    </td>
+    <td>Tea made from daylily roots has antiemetic properties and can provide some relief from food poisoning, gut worms and other gastrointestinal maladies. Over-consumption causes severe rebound nausea.</td>
+  </tr>
+  <tr>
+    <th>Tech Level</th>
+    <td>Neolithic</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>—</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>campfire or stove</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>3 daylily roots</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>1 daylily root tea</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>prevents vomiting</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 12 hours</td>
+  </tr>
+</table>
 
 #### Dandelion Leaf Tea
 
-<img alt="Dandelion Leaf Tea" src="Common/Textures/Things/Item/Drug/MMeds_DandelionLeafTea.png" align="left" width="128">
-
-This tea made from medicinal herbs and dandelion leaves helps to detoxify the body, as well as stimulating the appetite and settling the stomach. Drinking too much can cause grogginess and nausea, and has a chance of permanently damaging the kidneys. Take no more often than every six hours.
-
-Dandelion leaf tea is brewed from four dandelion leaves and one herbal medicine over a campfire or at a stove. It accelerates the rate at which the body clears accumulated toxic buildup by an additional 0.24 severity per day. It also increases the pawn's hunger rate by 30% and prevents vomiting. At higher doses, it increases the pawn's pain by 30%, reduces the pawn's consciousness by 30%, and _causes_ vomiting. At even higher doses overdose occurs, which increases pain by 50%, reduces consciousness by 50% and has a chance of causing minor chemical damage to one or both kidneys (part efficiency -10%).
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Dandelion Leaf Tea" src="Common/Textures/Things/Item/Drug/MMeds_DandelionLeafTea.png" width="128">
+    </td>
+    <td>This tea made from medicinal herbs and dandelion leaves helps to detoxify the body, as well as stimulating the appetite and settling the stomach. Drinking too much can cause grogginess and nausea, and has a chance of permanently damaging the kidneys. Take no more often than every six hours.</td>
+  </tr>
+  <tr>
+    <th>Tech Level</th>
+    <td>Neolithic</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>—</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>campfire or stove</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>4 dandelion leaves, 1 herbal medicine</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>1 dandelion leaf tea</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>reduces toxic buildup by an additional 0.24 per day, hunger gain rate +30%, prevents vomiting</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 6 hours</td>
+  </tr>
+</table>
 
 ### Industrial Drugs
 
-These drugs have their own research projects, all of which have Drug Production as a prerequisite. They're more difficult and more expensive to manufacture, but they're much more effective than the neolithic medicines.
+These drugs are more difficult and expensive to manufacture, but they're much more effective than the neolithic medicines.
 
 #### Proxen
 
-<img alt="Proxen" src="Common/Textures/Things/Item/Drug/MMeds_Proxen/MMeds_Proxen_b.png" align="left" width="128">
-
-Proxen is a mild analgesic. Non-addictive and non-tolerance-forming, but only really useful for providing partial relief from pain. Effects peak about one hour after administration, then gradually taper off over the next 11 hours. Take two to three times a day for best results.
-
-Research prerequisite: Proxen Production (requires Drug Production). This drug is synthesized at a drug lab out of one neutroamine, yielding four doses of proxen. At peak effectiveness, proxen reduces pain by a flat 50% across the board, tapering off over six hours. Overdosing on proxen _increases_ pain by 80% and reduces consciousness by 80%, usually requiring bed rest. The effects of the overdose are _not_ life-threatening and resolve in about two days.
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Proxen" src="Common/Textures/Things/Item/Drug/MMeds_Proxen/MMeds_Proxen_b.png" width="128">
+    </td>
+    <td>Proxen is a mild analgesic. Non-additive and non-tolerance-forming, but provides only partial relief from pain. Take every 6 hours for best results. Avoid taking more than 4 doses in a 24-hour period.</td>
+  </tr>
+  <tr>
+    <th>Tech Level</th>
+    <td>Industrial</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>Drug Production → Proxen Production</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>drug lab</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>1 neutroamine</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>4 proxen</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>pain -50%</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 6 hours</td>
+  </tr>
+  <tr>
+    <th>Overdose</th>
+    <td>pain, vomiting, chance of liver damage</td>
+  </tr>
+</table>
 
 #### Mycin
 
-<img alt="Mycin" src="Common/Textures/Things/Item/Drug/MMeds_Mycin/MMeds_Mycin_b.png" align="left" width="128">
-
-Mycin is a synthetic broad-spectrum antimicrobial that boosts the body's natural immune response to bacterial, viral, parasitic and fungal infections. Can be administered responsively to treat infections, or prophylactically to prevent infections. Take daily for best results.
-
-Research prerequisite: Mycin Production (requires Drug Production). Synthesized at a drug lab from one neutroamine and two herbal medicine, yielding three doses. Speeds immunity gain by 24% for about a day; also prevents wound infections, so mycin can be given prophylactically to wounded pawns if desired.
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Mycin" src="Common/Textures/Things/Item/Drug/MMeds_Mycin/MMeds_Mycin_b.png" width="128">
+    </td>
+    <td>Mycin is a synthetic broad-spectrum antimicrobial that boosts the body's natural immune response to bacterial, viral, parasitic and fungal infections. Can be administered responsively to treat infections, or prophylactically to prevent infections. Take daily for best results.</td>
+  </tr>
+  <tr>
+    <th>Tech Level</th>
+    <td>Industrial</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>Drug Production → Mycin Production</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>drug lab</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>1 neutroamine, 2 herbal medicine</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>3 mycin</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>immunity gain speed +24%, prevents wound infections</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 24 hours</td>
+  </tr>
+</table>
 
 #### Lopram
 
-<img alt="Lopram" src="Common/Textures/Things/Item/Drug/MMeds_Lopram/MMeds_Lopram_b.png"  align="left" width="128">
-
-Lopram is a synthetic antidepressant. When taken daily it significantly improves mood, but developing a dependence on the drug is extremely likely. Withdrawal symptoms include aches and pains, nausea, irritability, sleeplessness and depression lasting three to four days after the last dose taken. It is best to start a course of treatment with lopram only when a steady supply of the drug can be guaranteed.
-
-Research prerequisite: Lopram Production (requires Drug Production). Synthesized at a drug lab; one neutroamine yields two doses of lopram. One dose gives a +12 boost to a pawn's mood for 24 hours. It also increases the hunger rate and the rest fall rate by 20% each. Repeated use of lopram quickly leads to dependence on the drug. Discontinuation adds a mood malus of -35. It also causes occasional vomiting, increases pain by 30%, increases the pawn's chance of starting social fights by a factor of five, and reduces the pawn's rest fall rate by 40%. Withdrawal lasts about four days but is at no point life-threatening.
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Lopram" src="Common/Textures/Things/Item/Drug/MMeds_Lopram/MMeds_Lopram_b.png" width="128">
+    </td>
+    <td>Lopram is a synthetic antidepressant. When taken daily it significantly improves mood, but developing a dependence on the drug is almost inevitable. Withdrawal symptoms include aches and pains, nausea, irritability, sleeplessness and depression lasting three to four days after the last dose taken. It is best to start a course of treatment with lopram only when a steady supply of the drug can be guaranteed.</td>
+  </tr>
+  <tr>
+    <th>Tech Level</th>
+    <td>Industrial</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>Drug Production → Lopram Production</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>drug lab</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>1 neutroamine</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>2 lopram</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>mood +12, hunger gain rate +20%, rest fall rate +20%</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 24 hours</td>
+  </tr>
+</table>
 
 #### Quel
 
-<img alt="Quel" src="Common/Textures/Things/Item/Drug/MMeds_Quel/MMeds_Quel_b.png" align="left" width="128">
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Quel" src="Common/Textures/Things/Item/Drug/MMeds_Quel/MMeds_Quel_b.png" width="128">
+    </td>
+    <td>Quel is a synthetic antipsychotic that drastically reduces the likelihood of mental breaks. Side effects include drowsiness and increased appetite. It is not recommended for daily use due to tolerance and eventual dependence.</td>
+  </tr>
+  <tr>
+    <th>Tech Level</th>
+    <td>Industrial</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>Drug Production → Quel Production</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>drug lab</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>1 neutroamine</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>2 quel</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>mental break threshold −40%, rest fall rate +20%, hunger gain rate +40%</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 24 hours</td>
+  </tr>
+</table>
 
-Quel is a synthetic antipsychotic that drastically reduces the likelihood of mental breaks. Side effects include drowsiness and increased appetite. Quel's beneficial effect lasts for about a day, but it is not recommended for daily use as regular users of the drug develop a tolerance to it that can quickly lead to physical dependence.
+### Spacer Drugs
 
-Research prerequisite: Quel Production (requires Drug Production). Synthesized at a drug lab from one neutroamine per two doses of quel. A dose of quel reduces a pawn's mental break threshold by 40%, but also reduces consciousness by 10%. It also increases the pawn's rest fall rate by 20% and hunger rate by 40%. Tolerance builds quickly, decreasing the drug's duration of effect sharply. Once addicted, a pawn needs increasingly frequent doses of quel to stave off withdrawal symptoms, which can be severe: pain +10%, hunger +60%, rest need +40%, consciousness ×80% and a dramatic rise in the pawn's mental break threshold. Withdrawal also causes a -12 to mood, making mental breaks that much more likely. However, the dependence on the drug is short-lived, diminishing and finally disappearing over five to 10 days.
+These drugs require still more research and more resources to manufacture, but their effects are remarkable.
 
 #### Coagulase
 
-<img alt="Coagulase" src="Common/Textures/Things/Item/Drug/MMeds_Coagulase/MMeds_Coagulase_a.png" align="left" width="128">
-
-Coagulase is a powerful intravenous coagulant that when administered temporarily stops all bleeding. It can be self-administered, or given to a person who requires aid. Unfortunately clots have a tendency to form in places like the coronary arteries and the arteries of the brain, so the risks of life-threatening complication are significant. Coagulase should only be used in medical emergencies.
-
-Research prerequisite: Coagulase Production (requires Drug Production). Synthesized at a drug lab from four neutroamine and one industrial medicine. When administered, coagulase immediately stops all bleeding, but has a chance of causing a heart attack or an ischemic stroke. Note that if the Biotech DLC is installed, the recipe for coagulase is three neutroamine and one hemogen pack.
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Coagulase" src="Common/Textures/Things/Item/Drug/MMeds_Coagulase/MMeds_Coagulase_a.png" width="128">
+    </td>
+    <td>Coagulase is a powerful intravenous coagulant that temporarily stops all bleeding. Unfortunately clots have a tendency to form in places like the coronary arteries and the brain, so the risks of life-threatening complication are significant. Coagulase should only be used in medical emergencies.</td>
+  </tr>
+  <tr>
+    <th>Tech Level</th>
+    <td>Spacer</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>Drug Production → Coagulase Production</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>drug lab</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>Without Biotech: 4 neutroamine, 1 industrial medicine<br />With Biotech: 3 neutroamine, 1 hemogen pack</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>1 coagulase</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>immediately stops all bleeding</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 2 hours</td>
+  </tr>
+  <tr>
+    <th>Complications</th>
+    <td>heart attack, ischemic stroke</td>
+  </tr>
+</table>
 
 ---
 
