@@ -22,7 +22,7 @@ These drugs are available from the start of the game with no research required, 
 
 #### Chicken Soup
 
-<table align="left">
+<table>
   <tr>
     <td align="center">
       <img alt="Chicken Soup" src="Common/Textures/Things/Item/Drug/MMeds_ChickenSoup/MMeds_ChickenSoup_a.png" width="128">
@@ -42,7 +42,7 @@ These drugs are available from the start of the game with no research required, 
   </tr>
   <tr>
     <th>Ingredients</th>
-    <td>5 raw meat<br/>5 raw plant food<br/>1 herbal medicine</td>
+    <td>5 raw meat, 5 raw plant food, 1 herbal medicine</td>
   </tr>
   <tr>
     <th>Yield</th>
