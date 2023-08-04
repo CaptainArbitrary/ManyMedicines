@@ -10,7 +10,7 @@
       <texPath>Things/Item/Drug/MMeds_ChickenSoup</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <socialPropernessMatters>false</socialPropernessMatters>
+    <socialPropernessMatters>true</socialPropernessMatters>
     <tickerType>Rare</tickerType>
     <statBases>
       <WorkToMake>600</WorkToMake>
@@ -23,7 +23,7 @@
       <drugCategory>Medical</drugCategory>
       <foodType>Meal</foodType>
       <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
-      <preferability>NeverForNutrition</preferability>
+      <preferability>MealSimple</preferability>
       <ingestSound>Ingest_Drink</ingestSound>
       <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
       <outcomeDoers>
@@ -202,52 +202,12 @@
     </comps>
     <stages>
       <li>
-        <minSeverity>0.0</minSeverity>
-        <capMods>
-          <li>
-            <capacity>BloodFiltration</capacity>
-            <offset>0.05</offset>
-          </li>
-        </capMods>
-        <makeImmuneTo>
-          <li>Flu</li>
-        </makeImmuneTo>
-      </li>
-      <li>
-        <minSeverity>0.25</minSeverity>
-        <capMods>
-          <li>
-            <capacity>BloodFiltration</capacity>
-            <offset>0.10</offset>
-          </li>
-        </capMods>
-        <makeImmuneTo>
-          <li>Flu</li>
-        </makeImmuneTo>
-      </li>
-      <li>
-        <minSeverity>0.50</minSeverity>
-        <capMods>
-          <li>
-            <capacity>BloodFiltration</capacity>
-            <offset>0.15</offset>
-          </li>
-        </capMods>
-        <makeImmuneTo>
-          <li>Flu</li>
-        </makeImmuneTo>
-      </li>
-      <li>
-        <minSeverity>0.75</minSeverity>
         <capMods>
           <li>
             <capacity>BloodFiltration</capacity>
             <offset>0.20</offset>
           </li>
         </capMods>
-        <makeImmuneTo>
-          <li>Flu</li>
-        </makeImmuneTo>
       </li>
     </stages>
   </HediffDef>
