@@ -22,11 +22,40 @@ These drugs are available from the start of the game with no research required, 
 
 #### Chicken Soup
 
-<img alt="Chicken Soup" src="Common/Textures/Things/Item/Drug/MMeds_ChickenSoup/MMeds_ChickenSoup_a.png" align="left" width="128">
+<img alt="Chicken Soup" src="Common/Textures/Things/Item/Drug/MMeds_ChickenSoup/MMeds_ChickenSoup_a.png" align="left" width="96">
 
-This simple broth of meat, vegetables and medicinal herbs makes one feel better when one is sick. It starts spoiling almost immediately, though, so best consume it while it's very fresh. For reasons lost to history, this broth is universally called "chicken soup" even though it can be made from almost any ingredients.
+This simple broth of meat, vegetables and medicinal herbs makes one feel better when one is sick. It starts spoiling almost immediately, though, so it's best consumed while it's very fresh. For reasons lost to history, this broth is universally called "chicken soup" even though it can be made from almost any ingredients.
 
-The ingredients are five of any raw meat, five of any raw plant food and one herbal medicine; can be cooked over a campfire or at a stove. Increases blood filtration by a maximum of 20% and makes the pawn immune to the flu. Effects gradually taper off over about a day.
+<table>
+  <tr>
+    <th>Tech Level</th>
+    <td>neolithic</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>—</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>campfire or stove</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>5 raw meat, 5 raw plant food, 1 herbal medicine</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>1 chicken soup</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>blood filtration +20%</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 24 hours</td>
+  </tr>
+</table>
 
 #### Rose Petal Tea
 
