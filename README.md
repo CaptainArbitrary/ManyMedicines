@@ -14,7 +14,7 @@ Many Medicines is a [mod](https://rimworldwiki.com/wiki/Mods) for the [Ludeon St
 
 ## New Drugs
 
-Many Medicines adds a number of new [medical drugs](https://rimworldwiki.com/wiki/Medical_drugs). Some are treatments for acute conditions like disease, infection or trauma; others are best used for the ongoing management of chronic conditions or personality problems. There are neolithic drugs that are available at (or close to, depending on one's mods) the start of a new game, and there are industrial drugs that have research requirements and that are more expensive to produce. Beyond that lie the spacer drugs, remarkably expensive to manufacture but potentially life-changing.
+Many Medicines adds a number of new medical drugs. Some are treatments for acute conditions like disease, infection or trauma; others are best used for the ongoing management of chronic conditions or personality problems. There are [neolithic drugs](#neolithic-drugs) that are available at (or close to, depending on one's mods) the start of a new game, and there are [industrial drugs](#industrial-drugs) that have research requirements and that are more expensive to produce. Beyond that lie the [spacer drugs](#spacer-drugs), remarkably expensive to manufacture but potentially life-changing.
 
 ### Neolithic Drugs
 
