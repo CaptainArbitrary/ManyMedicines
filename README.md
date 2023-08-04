@@ -90,7 +90,7 @@ Research prerequisite: Quel Production (requires Drug Production). Synthesized a
 
 #### Coagulase
 
-<img alt="Coagulase" src="Common/Textures/Things/Item/Drug/MMeds_Coagulase.png" align="left" width="128">
+<img alt="Coagulase" src="Common/Textures/Things/Item/Drug/MMeds_Coagulase/MMeds_Coagulase_a.png" align="left" width="128">
 
 Coagulase is a powerful intravenous coagulant that when administered temporarily stops all bleeding. It can be self-administered, or given to a person who requires aid. Unfortunately clots have a tendency to form in places like the coronary arteries and the arteries of the brain, so the risks of life-threatening complication are significant. Coagulase should only be used in medical emergencies.
 
