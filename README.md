@@ -41,7 +41,7 @@ This simple broth of meat, vegetables and medicinal herbs makes one feel better 
   </tr>
   <tr>
     <th>Ingredients</th>
-    <td>5 raw meat, 5 raw plant food, 1 herbal medicine</td>
+    <td>5 raw meat<br/>5 raw plant food<br/>1 herbal medicine</td>
   </tr>
   <tr>
     <th>Yield</th>
@@ -78,7 +78,7 @@ This tea made from rose petals and medicinal herbs relieves stress, promotes goo
   </tr>
   <tr>
     <th>Ingredients</th>
-    <td>10 rose petals, 1 herbal medicine</td>
+    <td>10 rose petals<br/>1 herbal medicine</td>
   </tr>
   <tr>
     <th>Yield</th>
@@ -86,7 +86,7 @@ This tea made from rose petals and medicinal herbs relieves stress, promotes goo
   </tr>
   <tr>
     <th>Effects</th>
-    <td>mental break threshold −20%, blood pumping +6%, injury healing factor +8%</td>
+    <td>mental break threshold −20%<br/>blood pumping +6%<br/>injury healing factor +8%</td>
   </tr>
   <tr>
     <th>Duration</th>
