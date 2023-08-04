@@ -263,11 +263,42 @@ These drugs have their own research projects, all of which have Drug Production 
 
 #### Lopram
 
-<img alt="Lopram" src="Common/Textures/Things/Item/Drug/MMeds_Lopram/MMeds_Lopram_b.png"  align="left" width="64">
-
-Lopram is a synthetic antidepressant. When taken daily it significantly improves mood, but developing a dependence on the drug is extremely likely. Withdrawal symptoms include aches and pains, nausea, irritability, sleeplessness and depression lasting three to four days after the last dose taken. It is best to start a course of treatment with lopram only when a steady supply of the drug can be guaranteed.
-
-Research prerequisite: Lopram Production (requires Drug Production). Synthesized at a drug lab; one neutroamine yields two doses of lopram. One dose gives a +12 boost to a pawn's mood for 24 hours. It also increases the hunger rate and the rest fall rate by 20% each. Repeated use of lopram quickly leads to dependence on the drug. Discontinuation adds a mood malus of -35. It also causes occasional vomiting, increases pain by 30%, increases the pawn's chance of starting social fights by a factor of five, and reduces the pawn's rest fall rate by 40%. Withdrawal lasts about four days but is at no point life-threatening.
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Lopram" src="Common/Textures/Things/Item/Drug/MMeds_Lopram/MMeds_Lopram_b.png" width="128">
+    </td>
+    <td>Lopram is a synthetic antidepressant. When taken daily it significantly improves mood, but developing a dependence on the drug is almost inevitable. Withdrawal symptoms include aches and pains, nausea, irritability, sleeplessness and depression lasting three to four days after the last dose taken. It is best to start a course of treatment with lopram only when a steady supply of the drug can be guaranteed.</td>
+  </tr>
+  <tr>
+    <th>Tech Level</th>
+    <td>industrial</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>Drug Production → Lopram Production</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>drug lab</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>1 neutroamine</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>2 lopram</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>mood +12, hunger gain rate +20%, rest fall rate +20%</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 24 hours</td>
+  </tr>
+</table>
 
 #### Quel
 
