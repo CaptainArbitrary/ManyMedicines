@@ -341,11 +341,46 @@ These drugs have their own research projects, all of which have Drug Production 
 
 #### Coagulase
 
-<img alt="Coagulase" src="Common/Textures/Things/Item/Drug/MMeds_Coagulase/MMeds_Coagulase_a.png" align="left" width="64">
-
-Coagulase is a powerful intravenous coagulant that when administered temporarily stops all bleeding. It can be self-administered, or given to a person who requires aid. Unfortunately clots have a tendency to form in places like the coronary arteries and the arteries of the brain, so the risks of life-threatening complication are significant. Coagulase should only be used in medical emergencies.
-
-Research prerequisite: Coagulase Production (requires Drug Production). Synthesized at a drug lab from four neutroamine and one industrial medicine. When administered, coagulase immediately stops all bleeding, but has a chance of causing a heart attack or an ischemic stroke. Note that if the Biotech DLC is installed, the recipe for coagulase is three neutroamine and one hemogen pack.
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Coagulase" src="Common/Textures/Things/Item/Drug/MMeds_Coagulase/MMeds_Coagulase_a.png" width="128">
+    </td>
+    <td>Coagulase is a powerful intravenous coagulant that temporarily stops all bleeding. Unfortunately clots have a tendency to form in places like the coronary arteries and the brain, so the risks of life-threatening complication are significant. Coagulase should only be used in medical emergencies.</td>
+  </tr>
+  <tr>
+    <th>Tech Level</th>
+    <td>industrial</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>Drug Production → Coagulase Production</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>drug lab</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>4 neutroamine, 1 industrial medicine, , Biotech:, 3 neutroamine, 1 hemogen pack</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>1 coagulase</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>immediately stops all bleeding</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 2 hours</td>
+  </tr>
+  <tr>
+    <th>Complications</th>
+    <td>heart attack, ischemic stroke</td>
+  </tr>
+</table>
 
 ---
 
