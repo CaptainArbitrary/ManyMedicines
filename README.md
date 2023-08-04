@@ -177,7 +177,7 @@ These drugs are available from the start of the game with no research required, 
 
 ### Industrial Drugs
 
-These drugs have their own research projects, all of which have Drug Production as a prerequisite. They're more difficult and more expensive to manufacture, but they're much more effective than the neolithic medicines.
+These drugs are more difficult and expensive to manufacture, but they're much more effective than the neolithic medicines.
 
 #### Proxen
 
