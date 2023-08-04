@@ -181,11 +181,46 @@ These drugs have their own research projects, all of which have Drug Production 
 
 #### Proxen
 
-<img alt="Proxen" src="Common/Textures/Things/Item/Drug/MMeds_Proxen/MMeds_Proxen_b.png" align="left" width="64">
-
-Proxen is a mild analgesic. Non-addictive and non-tolerance-forming, but only really useful for providing partial relief from pain. Effects peak about one hour after administration, then gradually taper off over the next 11 hours. Take two to three times a day for best results.
-
-Research prerequisite: Proxen Production (requires Drug Production). This drug is synthesized at a drug lab out of one neutroamine, yielding four doses of proxen. At peak effectiveness, proxen reduces pain by a flat 50% across the board, tapering off over six hours. Overdosing on proxen _increases_ pain by 80% and reduces consciousness by 80%, usually requiring bed rest. The effects of the overdose are _not_ life-threatening and resolve in about two days.
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Proxen" src="Common/Textures/Things/Item/Drug/MMeds_Proxen/MMeds_Proxen_b.png" width="128">
+    </td>
+    <td>Proxen is a mild analgesic. Non-additive and non-tolerance-forming, but provides only partial relief from pain. Take every 6 hours for best results. Avoid taking more than 4 doses in a 24-hour period.</td>
+  </tr>
+  <tr>
+    <th>Tech Level</th>
+    <td>industrial</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>Drug Production → Proxen Production</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>drug lab</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>1 neutroamine</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>4 proxen</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>pain -50%</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 6 hours</td>
+  </tr>
+  <tr>
+    <th>Overdose</th>
+    <td>pain, vomiting, chance of liver damage</td>
+  </tr>
+</table>
 
 #### Mycin
 
