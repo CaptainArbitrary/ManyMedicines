@@ -60,11 +60,14 @@ These drugs are available from the start of the game with no research required, 
 
 #### Rose Petal Tea
 
-<img alt="Rose Petal Tea" src="Common/Textures/Things/Item/Drug/MMeds_RosePetalTea.png" align="left" width="64">
-
-This tea made from rose petals and medicinal herbs relieves stress, promotes good circulation and speeds healing. Its effects are quite mild, but it's free from harmful side effects so it can be consumed frequently without risk of damage or dependence.
-
 <table>
+  <tr>
+    <td align="center">
+      <img alt="Rose Petal Tea" src="Common/Textures/Things/Item/Drug/MMeds_RosePetalTea.png" width="128">
+    </td>
+    <td>This tea made from rose petals and medicinal herbs relieves stress, promotes good circulation and speeds healing. Its effects are quite mild, but it's free from harmful side effects so it can be consumed frequently without risk of damage or dependence.
+</td>
+  </tr>
   <tr>
     <th>Tech Level</th>
     <td>neolithic</td>
@@ -79,7 +82,7 @@ This tea made from rose petals and medicinal herbs relieves stress, promotes goo
   </tr>
   <tr>
     <th>Ingredients</th>
-    <td>10 rose petals<br/>1 herbal medicine</td>
+    <td>10 rose petals, 1 herbal medicine</td>
   </tr>
   <tr>
     <th>Yield</th>
@@ -87,7 +90,7 @@ This tea made from rose petals and medicinal herbs relieves stress, promotes goo
   </tr>
   <tr>
     <th>Effects</th>
-    <td>mental break threshold −20%<br/>blood pumping +6%<br/>injury healing factor +8%</td>
+    <td>mental break threshold −20%, blood pumping +6%, injury healing factor +8%</td>
   </tr>
   <tr>
     <th>Duration</th>
