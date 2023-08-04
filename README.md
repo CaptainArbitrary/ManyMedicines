@@ -138,11 +138,42 @@ These drugs are available from the start of the game with no research required, 
 
 #### Dandelion Leaf Tea
 
-<img alt="Dandelion Leaf Tea" src="Common/Textures/Things/Item/Drug/MMeds_DandelionLeafTea.png" align="left" width="64">
-
-This tea made from medicinal herbs and dandelion leaves helps to detoxify the body, as well as stimulating the appetite and settling the stomach. Drinking too much can cause grogginess and nausea, and has a chance of permanently damaging the kidneys. Take no more often than every six hours.
-
-Dandelion leaf tea is brewed from four dandelion leaves and one herbal medicine over a campfire or at a stove. It accelerates the rate at which the body clears accumulated toxic buildup by an additional 0.24 severity per day. It also increases the pawn's hunger rate by 30% and prevents vomiting. At higher doses, it increases the pawn's pain by 30%, reduces the pawn's consciousness by 30%, and _causes_ vomiting. At even higher doses overdose occurs, which increases pain by 50%, reduces consciousness by 50% and has a chance of causing minor chemical damage to one or both kidneys (part efficiency -10%).
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Dandelion Leaf Tea" src="Common/Textures/Things/Item/Drug/MMeds_DandelionLeafTea.png" width="128">
+    </td>
+    <td>This tea made from medicinal herbs and dandelion leaves helps to detoxify the body, as well as stimulating the appetite and settling the stomach. Drinking too much can cause grogginess and nausea, and has a chance of permanently damaging the kidneys. Take no more often than every six hours.</td>
+  </tr>
+  <tr>
+    <th>Tech Level</th>
+    <td>neolithic</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>—</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>campfire or stove</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>4 dandelion leaves, 1 herbal medicine</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>1 dandelion leaf tea</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>reduces toxic buildup by an additional 0.24 per day, hunger gain rate +30%, prevents vomiting</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 6 hours</td>
+  </tr>
+</table>
 
 ### Industrial Drugs
 
