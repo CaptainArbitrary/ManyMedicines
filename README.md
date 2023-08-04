@@ -63,7 +63,36 @@ This simple broth of meat, vegetables and medicinal herbs makes one feel better 
 
 This tea made from rose petals and medicinal herbs relieves stress, promotes good circulation and speeds healing. Its effects are quite mild, but it's free from harmful side effects so it can be consumed frequently without risk of damage or dependence.
 
-The ingredients are 10 rose petals and one herbal medicine; can be brewed over a campfire or at a stove. At peak effect, it reduces the pawn's mental break threshold by a maximum of 0.2, increases blood pumping by 6%, and improves injury healing by 8%. Effects gradually taper off over about a day.
+<table>
+  <tr>
+    <th>Tech Level</th>
+    <td>neolithic</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>—</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>campfire or stove</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>10 rose petals, 1 herbal medicine</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>1 rose petal tea</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>mental break threshold −20%, blood pumping +6%, injury healing factor +8%</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 18 hours</td>
+  </tr>
+</table>
 
 #### Daylily Root Tea
 
