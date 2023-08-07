@@ -50,6 +50,6 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: "${{ vars.MOD_NAME }}-${{ steps.get-short-sha.outputs.short_sha }}"
-        path: ${{ vars.ZIP_CONTENTS }}
+        path: .
 
 #endregion
