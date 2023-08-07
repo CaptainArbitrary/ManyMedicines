@@ -4,7 +4,7 @@
 &emsp;
 [![License](https://img.shields.io/github/license/CaptainArbitrary/ManyMedicines?style=for-the-badge)](LICENSE)
 &emsp;
-[![CI Status](https://img.shields.io/github/actions/workflow/status/CaptainArbitrary/ManyMedicines/push-ci.yml?style=for-the-badge&label=CI)](https://github.com/CaptainArbitrary/ManyMedicines/actions/workflows/push-ci.yml)
+[![CI Status](https://img.shields.io/github/actions/workflow/status/CaptainArbitrary/ManyMedicines/ci.yml?style=for-the-badge&label=CI)](https://github.com/CaptainArbitrary/ManyMedicines/actions/workflows/ci.yml)
 &emsp;
 [![Issues](https://img.shields.io/github/issues/CaptainArbitrary/ManyMedicines?style=for-the-badge)](https://github.com/CaptainArbitrary/ManyMedicines/issues)
 
