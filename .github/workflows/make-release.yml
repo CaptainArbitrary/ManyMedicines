@@ -83,10 +83,15 @@ jobs:
 
 #endregion
 
-#region Create and merge pull request
+#region Create, approve and merge pull request
 
     - id: create-pull-request
       run: gh pr create --title "Release ${{ steps.increment-version.outputs.version }}" --body "" --label "release"
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - id: approve-pull-request
+      run: gh pr --approve
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
