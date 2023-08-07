@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace MMeds
+namespace ManyMedicines
 {
     public class HediffCompProperties_TreatToxicBuildup : HediffCompProperties
     {

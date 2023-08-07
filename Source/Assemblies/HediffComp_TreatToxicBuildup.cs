@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace MMeds
+namespace ManyMedicines
 {
     public class HediffComp_TreatToxicBuildup : HediffComp
     {
