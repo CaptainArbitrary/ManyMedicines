@@ -1,0 +1,78 @@
+name: "make-changelog"
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: "make-changelog-${{ github.ref }}"
+  cancel-in-progress: true
+
+jobs:
+
+  make-release:
+
+    runs-on: ubuntu-latest
+
+    # permissions:
+    #   contents: write
+    #   pull-requests: write
+
+    steps:
+
+#region Setup
+
+    - id: checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - uses: fregante/setup-git-user@v2
+
+    # - run: git checkout -b "release/${{ steps.increment-version.outputs.version }}"
+
+#endregion
+
+#region Push release branch to origin
+
+    # - run: git push --set-upstream origin "release/${{ steps.increment-version.outputs.version }}"
+
+#endregion
+
+#region Create, approve and merge pull request
+
+    # - id: create-pull-request
+    #   run: gh pr create --title "Release ${{ steps.increment-version.outputs.version }}" --body "" --label "release"
+    #   env:
+    #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    # - run: gh pr merge --merge --delete-branch --subject "Merge branch release/${{ steps.increment-version.outputs.version }}"
+    #   env:
+    #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+#endregion
+
+#region Create and push release tag
+
+    # - run: git tag ${{ steps.increment-version.outputs.version }}
+    # - run: git push origin ${{ steps.increment-version.outputs.version }}
+
+#endregion
+
+#region Create changelog
+
+    - id: generate-changelog
+      uses: mikepenz/release-changelog-builder-action@v4
+      with:
+        toTag: ${{ github.ref }}
+        configuration: ".github/workflows/configurations/release-changelog-builder.json"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - env:
+        CHANGELOG: ${{ steps.generate-changelog.outputs.changelog }}
+      run: echo $CHANGELOG > CHANGELOG.md
+
+    - run: cat CHANGELOG.md
+
+#endregion
