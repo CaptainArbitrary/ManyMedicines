@@ -66,7 +66,7 @@ jobs:
       with:
         fromTag: 0.1.0
         toTag: ${{ github.ref }}
-        configuration: ".github/workflows/configurations/release-changelog-builder.json"
+        configuration: ".github/workflows/configurations/changelog-md.json"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

@@ -1,0 +1,26 @@
+{
+  "categories": [
+    {
+      "title": "### New Features",
+      "labels": [ "feature" ]
+    },
+    {
+      "title": "### Enhancements",
+      "labels": [ "enhancement" ]
+    },
+    {
+      "title": "### Bug Fixes",
+      "labels": [ "bug" ]
+    },
+    {
+      "title": "### Chores",
+      "labels": [ "chore" ]
+    }
+  ],
+  "sort": {
+    "order": "ASC",
+    "on_property": "mergedAt"
+  },
+  "template": "${{CHANGELOG}}",
+  "pr_template": "#### ${{TITLE}} ([PR #${{NUMBER}}](${{URL}}) by @${{AUTHOR}})\n\n${BODY}\n\n"
+}
