@@ -13,6 +13,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
+    <tradeability>None</tradeability>
     <statBases>
       <WorkToMake>600</WorkToMake>
       <MarketValue>6.5</MarketValue>
