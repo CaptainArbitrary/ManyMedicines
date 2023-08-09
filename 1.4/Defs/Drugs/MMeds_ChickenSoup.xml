@@ -12,6 +12,7 @@
     </graphicData>
     <socialPropernessMatters>true</socialPropernessMatters>
     <tickerType>Rare</tickerType>
+    <tradeability>None</tradeability>
     <statBases>
       <WorkToMake>600</WorkToMake>
       <MarketValue>12.00</MarketValue>
