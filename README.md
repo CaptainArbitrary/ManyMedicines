@@ -358,7 +358,7 @@ These drugs require still more research and more resources to manufacture, but t
   </tr>
   <tr>
     <th>Research</th>
-    <td>Drug Production → Coagulase Production</td>
+    <td>Drug Production → Advanced Drug Production → Coagulase Production</td>
   </tr>
   <tr>
     <th>Made at</th>
@@ -401,7 +401,7 @@ These drugs require still more research and more resources to manufacture, but t
   </tr>
   <tr>
     <th>Research</th>
-    <td>Drug Production → Retinax Production</td>
+    <td>Drug Production → Advanced Drug Production → Retinax Production</td>
   </tr>
   <tr>
     <th>Made at</th>
