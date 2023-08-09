@@ -4,7 +4,7 @@
   <ThingDef ParentName="MakeableDrugBase">
     <defName>MMeds_Retinax</defName>
     <label>retinax</label>
-    <description>Taken as a weekly injection, retinax helps to mitigate vision loss caused by the deterioration of or damage to one or both eyes. Side effects include blurring and haloing in the visual field. Because of this, retinax should not be taken by those who don't have significant vision loss.</description>
+    <description>Taken as a weekly injection, retinax helps to correct vision loss caused by the deterioration of or damage to one or both eyes. Side effects include blurring and haloing in the visual field. Retinax should not be taken by those who don't have significant vision loss.</description>
     <descriptionHyperlinks>
       <HediffDef>MMeds_RetinaxHigh</HediffDef>
     </descriptionHyperlinks>
@@ -54,7 +54,7 @@
     <defName>MMeds_RetinaxHigh</defName>
     <hediffClass>Hediff_High</hediffClass>
     <label>on retinax</label>
-    <description>Retinax in the bloodstream, treating vision loss. Side effects include blurring and haloing in the visual field.</description>
+    <description>Retinax in the bloodstream, correcting vision loss. Side effects include blurring and haloing in the visual field.</description>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>

@@ -393,7 +393,7 @@ These drugs require still more research and more resources to manufacture, but t
     <td align="center">
       <img alt="Retinax" src="Common/Textures/Things/Item/Drug/MMeds_Retinax/MMeds_Retinax_a.png" width="128">
     </td>
-    <td>Taken as a weekly injection, retinax helps to mitigate vision loss caused by the deterioration of or damage to one or both eyes. Side effects include blurring and haloing in the visual field. Because of this, retinax should not be taken by those who don't have significant vision loss.</td>
+    <td>Taken as a weekly injection, retinax helps to correct vision loss caused by the deterioration of or damage to one or both eyes. Side effects include blurring and haloing in the visual field. Retinax should not be taken by those who don't have significant vision loss.</td>
   </tr>
   <tr>
     <th>Tech Level</th>
@@ -417,7 +417,7 @@ These drugs require still more research and more resources to manufacture, but t
   </tr>
   <tr>
     <th>Effects</th>
-    <td>improves vision up to 90 percent in those with vision loss; _diminishes_ vision in those without vision loss</td>
+    <td>improves vision up to 90 percent in those with vision loss; diminishes visual acuity in those without vision loss</td>
   </tr>
   <tr>
     <th>Duration</th>
