@@ -77,6 +77,28 @@ jobs:
 
 #endregion
 
+#region Update CHANGELOG.txt
+
+    - id: update-changelog-txt
+      uses: mikepenz/release-changelog-builder-action@v4
+      with:
+        configuration: ".github/workflows/configurations/changelog-txt.json"
+        fromTag: ${{ steps.increment-version.outputs.current-version }}
+        toTag: ${{ github.ref }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - uses: DamianReeves/write-file-action@v1.2
+      with:
+        path: CHANGELOG.txt.temp
+        write-mode: overwrite
+        contents: "[h1]Release ${{ steps.increment-version.outputs.version }}[/h1]\n\n${{ steps.update-changelog-txt.outputs.changelog }}"
+
+    - run: echo -e "$(cat CHANGELOG.txt.temp)\n\n$(cat CHANGELOG.txt)" > CHANGELOG.txt
+
+    - run: git add CHANGELOG.txt
+    - run: git commit -m "Update CHANGELOG.txt for version ${{ steps.increment-version.outputs.version }}"
+
 #region Update CHANGELOG.md
 
     - id: update-changelog-md
