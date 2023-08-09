@@ -58,17 +58,31 @@
   </ResearchProjectDef>
 
   <ResearchProjectDef>
+    <defName>MMeds_AdvancedDrugProduction</defName>
+    <label>advanced drug production</label>
+    <tab>MMeds_ResearchTab</tab>
+    <description>Produce advanced drugs.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>DrugProduction</li>
+    </prerequisites>
+    <researchViewX>1.0</researchViewX>
+    <researchViewY>0.0</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
     <defName>MMeds_CoagulaseProduction</defName>
     <label>coagulase production</label>
     <tab>MMeds_ResearchTab</tab>
     <description>Produce coagulase, a powerful coagulant.</description>
     <baseCost>400</baseCost>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <prerequisites>
-      <li>DrugProduction</li>
+      <li>MMeds_AdvancedDrugProduction</li>
     </prerequisites>
-    <researchViewX>0.0</researchViewX>
-    <researchViewY>2.8</researchViewY>
+    <researchViewX>2.0</researchViewX>
+    <researchViewY>0.0</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -77,12 +91,12 @@
     <tab>MMeds_ResearchTab</tab>
     <description>Produce retinax, a drug to treat vision loss.</description>
     <baseCost>400</baseCost>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <prerequisites>
-      <li>DrugProduction</li>
+      <li>MMeds_AdvancedDrugProduction</li>
     </prerequisites>
-    <researchViewX>0.0</researchViewX>
-    <researchViewY>3.5</researchViewY>
+    <researchViewX>2.0</researchViewX>
+    <researchViewY>0.7</researchViewY>
   </ResearchProjectDef>
 
 </Defs>
