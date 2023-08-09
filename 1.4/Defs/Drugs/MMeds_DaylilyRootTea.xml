@@ -17,7 +17,7 @@
     <tradeability>None</tradeability>
     <statBases>
       <WorkToMake>600</WorkToMake>
-      <MarketValue>6.5</MarketValue>
+      <MarketValue>3.25</MarketValue>
       <Mass>0.05</Mass>
       <DeteriorationRate>6</DeteriorationRate>
     </statBases>
