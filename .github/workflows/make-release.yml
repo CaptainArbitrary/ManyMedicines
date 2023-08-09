@@ -108,7 +108,7 @@ jobs:
     - id: generate-changelog
       uses: mikepenz/release-changelog-builder-action@v4
       with:
-        configuration: ".github/workflows/configurations/release-changelog-builder.json"
+        configuration: ".github/workflows/configurations/changelog-github.json"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
