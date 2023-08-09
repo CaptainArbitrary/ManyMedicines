@@ -386,6 +386,45 @@ These drugs require still more research and more resources to manufacture, but t
   </tr>
 </table>
 
+#### Retinax
+
+<table>
+  <tr>
+    <td align="center">
+      <img alt="Retinax" src="Common/Textures/Things/Item/Drug/MMeds_Retinax/MMeds_Retinax_a.png" width="128">
+    </td>
+    <td>Taken as a weekly injection, retinax helps to correct vision loss caused by the deterioration of or damage to one or both eyes. Side effects include blurring and haloing in the visual field. Retinax should not be taken by those who don't have significant vision loss.</td>
+  </tr>
+  <tr>
+    <th>Tech Level</th>
+    <td>Spacer</td>
+  </tr>
+  <tr>
+    <th>Research</th>
+    <td>Drug Production → Retinax Production</td>
+  </tr>
+  <tr>
+    <th>Made at</th>
+    <td>drug lab</td>
+  </tr>
+  <tr>
+    <th>Ingredients</th>
+    <td>8 neutroamine</td>
+  </tr>
+  <tr>
+    <th>Yield</th>
+    <td>1 retinax</td>
+  </tr>
+  <tr>
+    <th>Effects</th>
+    <td>improves vision up to 90 percent in those with vision loss; diminishes visual acuity in those without vision loss</td>
+  </tr>
+  <tr>
+    <th>Duration</th>
+    <td>about 1 week</td>
+  </tr>
+</table>
+
 ---
 
 # FAQ

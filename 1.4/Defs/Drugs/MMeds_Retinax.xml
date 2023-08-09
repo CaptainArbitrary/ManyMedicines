@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>MMeds_Retinax</defName>
+    <label>retinax</label>
+    <description>Taken as a weekly injection, retinax helps to correct vision loss caused by the deterioration of or damage to one or both eyes. Side effects include blurring and haloing in the visual field. Retinax should not be taken by those who don't have significant vision loss.</description>
+    <descriptionHyperlinks>
+      <HediffDef>MMeds_RetinaxHigh</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/MMeds_Retinax</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <MarketValue>9.25</MarketValue>
+      <Mass>0.005</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <foodType>Processed, Fluid</foodType>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MMeds_RetinaxHigh</hediffDef>
+          <severity>1.0</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>MMeds_RetinaxProduction</researchPrerequisite>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <productCount>1</productCount>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>8</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug" />
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>MMeds_RetinaxHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>on retinax</label>
+    <description>Retinax in the bloodstream, correcting vision loss. Side effects include blurring and haloing in the visual field.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.1429</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <setMax>0.9</setMax>
+            <postFactor>1.6</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

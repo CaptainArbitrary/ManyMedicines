@@ -16,7 +16,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>600</WorkToMake>
-      <MarketValue>6.5</MarketValue>
+      <MarketValue>8.50</MarketValue>
       <Mass>0.05</Mass>
       <DeteriorationRate>6</DeteriorationRate>
     </statBases>
