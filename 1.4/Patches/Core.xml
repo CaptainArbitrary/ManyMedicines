@@ -28,4 +28,14 @@
     </value>
   </Operation>
 
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TraderKindDef[defName = "Orbital_Exotic"]/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MMeds_Pharmites</thingDef>
+        <countRange>25~75</countRange>
+      </li>
+    </value>
+  </Operation>
+
 </Patch>
