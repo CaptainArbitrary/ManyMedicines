@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>MMeds_Organosilver</defName>
+    <label>organosilver</label>
+    <description>A solution of organic compounds containing silver, used to synthesize certain drugs.</description>
+    <possessionCount>10</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Resource/MMeds_Organosilver</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>150</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <WorkToMake>800</WorkToMake>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>65.00</MarketValue>
+      <Mass>0.02</Mass>
+      <Flammability>0.7</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_Brewing</soundWorking>
+      <bulkRecipeCount>4</bulkRecipeCount>
+      <researchPrerequisite>MMeds_AdvancedDrugProduction</researchPrerequisite>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <productCount>1</productCount>
+    </recipeMaker>
+    <costList>
+      <Silver>10</Silver>
+      <Chemfuel>10</Chemfuel>
+    </costList>
+  </ThingDef>
+
+</Defs>
