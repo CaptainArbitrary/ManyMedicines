@@ -1,18 +1,5 @@
 #!/bin/bash
 
-MOD_NAME="ManyMedicines"
-
-gh variable delete ACTIONS_STEP_DEBUG
-# gh variable set ACTIONS_STEP_DEBUG -b "true"
-
-# Repository variables
-
-gh variable set MOD_NAME -b "$MOD_NAME"
-gh variable set SLN_PATH -b "Source/Assemblies/$MOD_NAME.sln"
-gh variable set CSPROJ_PATH -b "Source/Assemblies/$MOD_NAME.csproj"
-gh variable set ASSEMBLY_PATH -b "1.4/Assemblies/$MOD_NAME.dll"
-gh variable set ZIP_CONTENTS -b "1.4/ About/ Common/ Mods/ LICENSE LoadFolders.xml"
-
 # Pull request type labels
 
 gh label create "chore" -d "A change that doesn't affect production code" -c "#c5def5" -f
